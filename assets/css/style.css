@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Merriweather&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Merriweather', serif;
 }
 
 body {
@@ -9,6 +11,20 @@ body {
     background: #f0f0f0;
 }
 
+.navbar-default {
+    padding-left: 20px;
+    background-color: #726056;
+}
+
 .logo {
     color: #f0f0f0;
+}
+
+h1 {
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.country-selection {
+    float: right;
+    position: relative;
 }
