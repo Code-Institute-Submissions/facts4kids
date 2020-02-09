@@ -24,7 +24,6 @@ h1 {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
-.country-selection {
-    float: right;
-    position: relative;
+i {
+    margin-right: 20px;
 }
