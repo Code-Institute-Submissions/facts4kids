@@ -2,6 +2,7 @@
 
 * {
     padding: 0;
+    spacing: 0;
     margin: 0;
     font-family: 'Merriweather', serif;
 }
@@ -26,4 +27,23 @@ h1 {
 
 i {
     margin-right: 20px;
+    color: #f0f0f0;
+}
+
+.content-default {
+    height: 700px;
+}
+
+.footer-default {
+    position: static;
+    height: 4em;
+    line-height: 4em;
+    background-color: #726056;
+    color: #f0f0f0;
+    font-size: smaller;
+}
+
+.footer-default i {
+    float: right;
+    margin: 8px 0 0 5px;
 }
