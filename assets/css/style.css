@@ -29,8 +29,12 @@ h1 {
 
 /* Font awesome styling */
 i {
-    margin-right: 20px;
     color: #f0f0f0;
+    margin-left: 20px;
+}
+
+#countries {
+    float: right;
 }
 
 /* Content styling */
