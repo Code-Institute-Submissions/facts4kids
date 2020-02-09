@@ -1,5 +1,7 @@
+/* Import Google font */
 @import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Merriweather&display=swap');
 
+/* Clear padding, spacing & margin, set default font for website */
 * {
     padding: 0;
     spacing: 0;
@@ -8,10 +10,10 @@
 }
 
 body {
-    height: 100vh;
     background: #f0f0f0;
 }
 
+/* Heading styling */
 .navbar-default {
     padding-left: 20px;
     background-color: #726056;
@@ -25,15 +27,18 @@ h1 {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
+/* Font awesome styling */
 i {
     margin-right: 20px;
     color: #f0f0f0;
 }
 
+/* Content styling */
 .content-default {
     height: 700px;
 }
 
+/* Footer styling */
 .footer-default {
     position: static;
     height: 4em;
