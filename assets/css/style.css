@@ -4,7 +4,6 @@
 /* Clear padding, spacing & margin, set default font for website */
 * {
     padding: 0;
-    spacing: 0;
     margin: 0;
     font-family: 'Merriweather', serif;
 }
