@@ -15,21 +15,29 @@ body {
 /* Heading styling */
 .navbar-default {
     padding-left: 20px;
-    /* background-color: #726056; */
+    background-color: #282828;
 }
 
 .logo {
-    color: #f0f0f0;
+    color: #daa520;
 }
 
 h1 {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
+h3 {
+    text-align: center;
+} /* Testing, please delete later */
+
 /* Font awesome styling */
 i {
     color: #f0f0f0;
     margin-left: 20px;
+}
+
+.info-point {
+    cursor: pointer;
 }
 
 #countries {
@@ -46,8 +54,8 @@ i {
     position: static;
     height: 4em;
     line-height: 4em;
-    background-color: #726056;
-    color: #f0f0f0;
+    background-color: #282828;
+    color: #daa520;
     font-size: smaller;
 }
 

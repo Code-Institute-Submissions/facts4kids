@@ -1,3 +1,3 @@
-// $(document).ready(function() {
-//     $("#myCenterModal").modal();
-// });
+$(document).ready(function() {
+    $("#myCenterModal").modal();
+});
