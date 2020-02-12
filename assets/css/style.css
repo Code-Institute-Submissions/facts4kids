@@ -15,7 +15,7 @@ body {
 /* Heading styling */
 .navbar-default {
     padding-left: 20px;
-    background-color: #282828;
+    background-color: #1c1d26;
 }
 
 .logo {
@@ -26,13 +26,23 @@ h1 {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
-h3 {
+/* Modal styling */
+.modal-title-align {
+    margin-left: 100px;
+}
+
+.modal-default p {
     text-align: center;
-} /* Testing, please delete later */
+}
+
+.btn-align {
+    margin: 0 auto;
+    display: block;
+}
 
 /* Font awesome styling */
 i {
-    color: #f0f0f0;
+    color: #daa520;
     margin-left: 20px;
 }
 
@@ -46,15 +56,38 @@ i {
 
 /* Content styling */
 .content-default {
-    height: 700px;
+    margin: 20px 20px 20px 20px;
 }
+
+h4 {
+    color: #660000;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.intro {
+    border: solid 4px #1c1d26;
+}
+
+.intro p {
+    font-size: medium;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.intro a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Map section */
 
 /* Footer styling */
 .footer-default {
     position: static;
     height: 4em;
     line-height: 4em;
-    background-color: #282828;
+    background-color: #1c1d26;
     color: #daa520;
     font-size: smaller;
 }
