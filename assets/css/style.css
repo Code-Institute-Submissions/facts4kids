@@ -29,6 +29,7 @@ h1 {
 /* Modal styling */
 .modal-title-align {
     margin-left: 100px;
+    padding: 10px 10px 10px 10px;
 }
 
 .modal-default p {
@@ -60,13 +61,22 @@ i {
 }
 
 h4 {
-    color: #660000;
     font-weight: bold;
     margin-top: 20px;
 }
 
-.intro {
-    border: solid 4px #1c1d26;
+h6 {
+    margin-top: 50px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.text-small {
+    font-size: xx-small;
+}
+
+.intro-title {
+    text-align: center;
 }
 
 .intro p {
@@ -75,12 +85,14 @@ h4 {
     margin-top: 20px;
 }
 
-.intro a {
+.intro a, .intro-email a {
     text-decoration: none;
     font-weight: bold;
 }
 
 /* Map section */
+.map {
+}
 
 /* Footer styling */
 .footer-default {
