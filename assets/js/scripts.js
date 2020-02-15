@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $("#myCenterModal").modal();
+    $("#myCenterModal").modal('show');
 });

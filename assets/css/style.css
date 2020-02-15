@@ -26,7 +26,7 @@ h1 {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
-/* Modal styling */
+/* Intro Modal styling */
 .modal-title-align {
     margin-left: 100px;
     padding: 10px 10px 10px 10px;
@@ -39,6 +39,20 @@ h1 {
 .btn-align {
     margin: 0 auto;
     display: block;
+}
+
+/* More Facts Modal Styling */
+.more-modal-title-align {
+    margin-left: 170px;
+    padding: 10px 10px 10px 10px;
+}
+
+.more-modal-default {
+    margin: 20px 20px 20px 20px;
+}
+
+ul {
+    margin-left: 40px;
 }
 
 /* Font awesome styling */
@@ -65,6 +79,10 @@ h4 {
     margin-top: 20px;
 }
 
+h5 {
+    font-weight: bold;
+}
+
 h6 {
     margin-top: 50px;
     font-size: smaller;
@@ -88,6 +106,11 @@ h6 {
 .intro a, .intro-email a {
     text-decoration: none;
     font-weight: bold;
+    color: #007bff;
+}
+
+.intro a:hover, .intro-email a:hover {
+    color: #4169e1;
 }
 
 /* Map section */
