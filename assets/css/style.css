@@ -28,8 +28,13 @@ h1 {
 
 /* Intro Modal styling */
 .modal-title-align {
-    margin-left: 100px;
+    margin-left: 0 auto;
+    text-align: center;
     padding: 10px 10px 10px 10px;
+}
+
+.modal-default {
+    margin: 5px 10px 5px 10px;
 }
 
 .modal-default p {
@@ -43,12 +48,35 @@ h1 {
 
 /* More Facts Modal Styling */
 .more-modal-title-align {
-    margin-left: 170px;
+    margin-left: 0 auto;
+    text-align: center;
     padding: 10px 10px 10px 10px;
+}
+
+.cross-color {
+    color: #f0f0f0;
+    font-size: 50px;
+}
+
+.cross-color:hover {
+    color: #fafafa;
 }
 
 .more-modal-default {
     margin: 20px 20px 20px 20px;
+}
+
+/* Email Modal Styling*/
+.email-title-align {
+    margin-left: 10px;
+}
+
+.box-align {
+    margin-right: 10px;
+}
+
+.email-align {
+    margin-bottom: 20px;
 }
 
 ul {
@@ -75,8 +103,8 @@ i {
 }
 
 h4 {
-    font-weight: bold;
     margin-top: 20px;
+    font-weight: bold;    
 }
 
 h5 {
