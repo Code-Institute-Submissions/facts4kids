@@ -17,6 +17,14 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
+    <!-- Email JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript"> (
+        function(){
+            emailjs.init("user_1ddZapHG9EAkU3X8K1LUe");
+        })();
+    </script>
+
 	<title>Facts for Kids</title>
 </head>
 
@@ -463,47 +471,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 intro-email">
-				<h6>Anything to share with the developer? Please <a class="info-point" data-toggle="modal"
-						data-target="#emailModal">email</a> here.</h6>
-			</div>
-
-			<!-- Email Modal -->
-			<div class="modal fade" id="emailModal">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header row">
-							<h1 class="modal-title text-warning bg-dark modal-title-align col-sm-12">Something to Say
-								...<button type="button" class="close cross-color" data-dismiss="modal">&times;</button>
-							</h1>
-						</div>
-						<div class="modal-body modal-default">
-							<form>
-								<div class="form-group">
-                                    <div class="row email-align">
-                                        <label for="sender-name" class="col-form-label col-sm-3 email-title-align">Name:</label>
-									    <input type="text" class="form-control col-sm-8 box-align" id="sender-name" placeholder="Enter your name">
-                                    </div>
-									<div class="row email-align">
-                                        <label for="email" class="col-form-label col-sm-3 email-title-align">Email:</label>
-									    <input type="email" class="form-control col-sm-8" id="email" placeholder="Enter your email">
-                                    </div>
-                                    <div class="row email-align">
-                                        <label for="email-title" class="col-form-label col-sm-3 email-title-align">Title:</label>
-									    <input type="text" class="form-control col-sm-8" id="email-title" placeholder="Enter email title">
-                                    </div>
-                                    
-                                </div>
-								<div class="form-group">
-									<label for="message-text" class="col-form-label">Message:</label>
-									<textarea class="form-control" id="message-text" placeholder="Your message here" rows="6"></textarea>
-								</div>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-warning btn-align" data-dismiss="modal">Send</button>
-						</div>
-					</div>
-				</div>
+				<h6>Anything to share with the developer? Please <a class="info-point" onclick="window.open('mailto:kongteckmee@email.com?subject=I Have Something to Say!&body=Hello!%0D%0A%0D%0A(Email Content)%0D%0A%0D%0A%0D%0ABest%20Wishes,%0D%0A%0D%0A(Your Name)%0D%0A%0D%0A');">email</a> here.</h6>
 			</div>
 		</div>
 
