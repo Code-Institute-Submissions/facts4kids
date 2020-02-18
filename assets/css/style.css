@@ -129,7 +129,10 @@ h6 {
 }
 
 /* Map section */
-.map {
+#map {
+    height: 600px;
+    border: dashed 4px #1c1d26;
+    margin-left: 50px;
 }
 
 /* Footer styling */
