@@ -232,12 +232,11 @@ $(document).ready(function () {
         for (i = 0; i < info.length; i++) {
             if (info[i][0] == selectedText) {
                 var contentString = '<div id="content">' +
-                    '<div id="siteNotice">' +
-                    '</div>' +
+                    '<div id="siteInfo">' +
                     '<h3>' + info[i][0] + '</h3>' + '<hr>' +
                     '<img src="' + info[i][8] + '"alt="flag">' +
                     '<div id="bodyContent">' +
-                    '<p><b>Motto: </b>' + info[i][1] +
+                    '<br><p><b>Motto: </b>' + info[i][1] +
                     '<p><b>Capital: </b>' + info[i][2] +
                     '<p><b>Official Language: </b>' + info[i][3] +
                     '<p><b>Population: </b>' + info[i][4] +
