@@ -33,7 +33,7 @@ $(document).ready(function () {
         markers.push(marker);
 
         var info = [
-            // [“Afghanistan”, “There is no god but God; Muhammad is the messenger of God.”, “Kabul”, “Pashto, Dari, Pashto”, “38,928,346”, “652,860”, “Afghani(AFN) ”, “UTC+4:30 Solar Calendar”, “assets/img/afghanistan.png”],
+            ["Afghanistan", "There is no god but God; Muhammad is the messenger of God.", "Kabul", "Pashto, Dari, Pashto", "38,928,346", "652,860", "Afghani(AFN)", "UTC+4:30 Solar Calendar", "assets/img/afghanistan.png"],
             // [“Albania”, “You Albania, give me honor, give me the name Albanian”, “Tirana”, “Albanian”, “2, 877, 797”, “27, 400”, “Lek(ALL) ”, “UTC + 1(CET) ”, “assets / img / albania.png”],
             // [“Algeria”, “By the people and for the people”, “Algiers”, “Arabic, Berber”, “43, 851, 044”, “2, 381, 740”, “Dinar(DZD) ”, “UTC + 1(CET) ”, “assets / img / algeria.png”],
             // [“Andorra”, “Strength united is stronger”, “Andorra la Vella”, “Catalan”, “77, 265”, “470”, “Euro(EUR) ”, “UTC + 1(CET) ”, “assets / img / andorra.png”],
@@ -234,7 +234,7 @@ $(document).ready(function () {
                 var contentString = '<div id="content">' +
                     '<div id="siteNotice">' +
                     '</div>' +
-                    '<h1>' + info[i][0] + '</h1>' + '<hr><br>' +
+                    '<h3>' + info[i][0] + '</h3>' + '<hr>' +
                     '<img src="' + info[i][8] + '"alt="flag">' +
                     '<div id="bodyContent">' +
                     '<p><b>Motto: </b>' + info[i][1] +
