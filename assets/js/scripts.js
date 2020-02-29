@@ -289,7 +289,7 @@ $(document).ready(function () {
                     '<p><b>Capital: </b>' + info[i][2] + '</p>' +
                     '<p><b>Official Language: </b>' + info[i][3] + '</p>' +
                     '<p><b>Population: </b>' + info[i][4] + '</p>' +
-                    '<p><b>Area: </b>' + info[i][5] + '</p>' +
+                    '<p><b>Area (km²): </b>' + info[i][5] + '</p>' +
                     '<p><b>Currency: </b>' + info[i][6] + '</p>' +
                     '<p><b>Time Zone: </b>' + info[i][7] + '</p>' +
                     '</div>' +
