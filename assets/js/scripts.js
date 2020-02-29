@@ -34,7 +34,7 @@ $(document).ready(function () {
 
         var info = [
             // Details for Country that start with "A"
-            ["Afghanistan", "There is no god but God; Muhammad is the messenger of God.", "Kabul", "Pashto, Dari, Pashto", "38,928,346", "652,860", "Afghani (AFN)", "UTC+4:30 Solar Calendar", "assets/img/afghanistan.png"],
+            ["Afghanistan", "There is no god but God; Muhammad is the messenger of God.", "Kabul", "Pashto, Dari", "38,928,346", "652,860", "Afghani (AFN)", "UTC+4:30 Solar Calendar", "assets/img/afghanistan.png"],
             ["Albania", "You Albania, give me honor, give me the name Albanian", "Tirana", "Albanian", "2,877,797", "27,400", "Lek (ALL)", "UTC+1 (CET)", "assets/img/albania.png"],
             ["Algeria", "By the people and for the people", "Algiers", "Arabic, Berber", "43,851,044", "2,381,740", "Dinar (DZD)", "UTC+1 (CET)", "assets/img/algeria.png"],
             ["Andorra", "Strength united is stronger", "Andorra la Vella", "Catalan", "77,265", "470", "Euro (EUR)", "UTC+1 (CET)", "assets/img/andorra.png"],
