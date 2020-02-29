@@ -139,6 +139,10 @@ h6 {
     margin: 0;
 }
 
+h3, b {
+    font-weight: bold;
+}
+
 /* Footer styling */
 .footer-default {
     position: static;

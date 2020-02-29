@@ -285,14 +285,13 @@ $(document).ready(function () {
                     '<h3>' + info[i][0] + '</h3>' + '<hr>' +
                     '<img src="' + info[i][8] + '"alt="flag">' +
                     '<div id="bodyContent">' +
-                    '<br><p><b>Motto: </b>' + info[i][1] +
-                    '<p><b>Capital: </b>' + info[i][2] +
-                    '<p><b>Official Language: </b>' + info[i][3] +
-                    '<p><b>Population: </b>' + info[i][4] +
-                    '<p><b>Area: </b>' + info[i][5] +
-                    '<p><b>Currency: </b>' + info[i][6] +
-                    '<p><b>Time Zone: </b>' + info[i][7] +
-                    '</p>' +
+                    '<br><p><b>Motto: </b>' + info[i][1] + '</p>' +
+                    '<p><b>Capital: </b>' + info[i][2] + '</p>' +
+                    '<p><b>Official Language: </b>' + info[i][3] + '</p>' +
+                    '<p><b>Population: </b>' + info[i][4] + '</p>' +
+                    '<p><b>Area: </b>' + info[i][5] + '</p>' +
+                    '<p><b>Currency: </b>' + info[i][6] + '</p>' +
+                    '<p><b>Time Zone: </b>' + info[i][7] + '</p>' +
                     '</div>' +
                     '</div>';
 
