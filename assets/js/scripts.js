@@ -282,7 +282,7 @@ $(document).ready(function () {
             if (info[i][0] == selectedText) {
                 var contentString = '<div id="content">' +
                     '<div id="siteInfo">' +
-                    '<h3>' + info[i][0] + '</h3>' + '<hr>' +
+                    '<h2>' + info[i][0] + '</h2>' + '<hr>' +
                     '<img src="' + info[i][8] + '"alt="flag">' +
                     '<div id="bodyContent">' +
                     '<br><p><b>Motto: </b>' + info[i][1] + '</p>' +
