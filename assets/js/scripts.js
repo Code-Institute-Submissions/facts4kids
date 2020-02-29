@@ -94,7 +94,7 @@ $(document).ready(function () {
             // Details for Country that start with "E"
             ["Ecuador", "God, Homeland, and Freedom", "Quito", "Spanish", "17,643,054", "248,360", "United States dollar (USD)", "UTC−5 / −6 (ECT / GALT)", "assets/img/ecuador.png"],
             ["Egypt", "No official motto", "Cairo", "Arabic", "102,334,404", "995,450", "Egyptian pound (EGP)", "UTC+2 (EET)", "assets/img/egypt.png"],
-            ["El Salvador", "God, Union, Liberty", "San Salvador", "Spanish", "6,486,205", "20,720", "United States dollara (USD)", "UTC−6 (CST)", "assets/img/el-salvador.png"],
+            ["El Salvador", "God, Union, Liberty", "San Salvador", "Spanish", "6,486,205", "20,720", "United States dollar (USD)", "UTC−6 (CST)", "assets/img/el-salvador.png"],
             ["Equatorial Guinea", "Unity, Peace, Justice", "Malabo (current), Ciudad de la Paz (under construction)", "Spanish, French, Portuguese", "1,402,985", "28,050", "Central African CFA franc (XAF)", "UTC+1 (WAT)", "assets/img/equatorial-guinea.png"],
             ["Eritrea", "State of Eritrea; also in English", "Asmara", "None", "3,546,421", "101,000", "Nakfa (ERN)", "UTC+3 (EAT)", "assets/img/eritrea.png"],
             ["Estonia", "No official motto", "Tallinn", "Estonian", "1,326,535", "42,390", "Euro (EUR)", "UTC+2 (EET)", "assets/img/estonia.png"],
