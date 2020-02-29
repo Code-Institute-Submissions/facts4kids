@@ -99,7 +99,7 @@ $(document).ready(function () {
             ["Eritrea", "State of Eritrea", "Asmara", "None", "3,546,421", "101,000", "Nakfa (ERN)", "UTC+3 (EAT)", "assets/img/eritrea.png"],
             ["Estonia", "No official motto", "Tallinn", "Estonian", "1,326,535", "42,390", "Euro (EUR)", "UTC+2 (EET)", "assets/img/estonia.png"],
             ["Eswatini", "We are a fortress/We are a mystery/We hide ourselves away/We are powerful ones", "Mhahane, Lobamba", "Swazi, English", "1,160,164", "17,200", "Swazi lilangeni (SZL), South African rand (ZAR)", "UTC+2 (SAST)", "assets/img/eswatini.png"],
-            ["Ethiopia", "No official motto", "Addis Ababa(Finfinne)", "Amharic", "114,963,588", "1,000,000", "Birr (ETB)", "UTC+3 (EAT)", "assets/img/ethiopia.png"],
+            ["Ethiopia", "No official motto", "Addis Ababa (Finfinne)", "Amharic", "114,963,588", "1,000,000", "Birr (ETB)", "UTC+3 (EAT)", "assets/img/ethiopia.png"],
 
             // Details for Country that start with "F"
             ["Fiji", "Fear God and honour the Queen", "Suva", "iTaukei, English, Fiji Hindi", "896,445", "18,270", "Fijian dollar (FJD)", "UTC+12 (FJT)", "assets/img/fiji.png"],
