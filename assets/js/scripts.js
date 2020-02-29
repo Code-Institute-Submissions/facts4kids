@@ -214,7 +214,7 @@ $(document).ready(function () {
             ["Rwanda", "Unity, Work, Patriotism", "Kigali", "English, French, Kinyarwanda, Swahili", "12,952,218", "24,670", "Rwandan franc (RWF)", "UTC+2 (CAT)", "assets/img/rwanda.png"],
 
             // Details for Country that start with "S"
-            ["Saint Kitts & Nevis", "Country above self", "Basseterre", "English", "53,199", "260", "East Caribbean dollar (XCD)", "UTC-4", "assets/img/saint-kitts-and-nevis.png"],
+            ["Saint Kitts and Nevis", "Country above self", "Basseterre", "English", "53,199", "260", "East Caribbean dollar (XCD)", "UTC-4", "assets/img/saint-kitts-and-nevis.png"],
             ["Saint Lucia", "The Land, The People, The Light", "Castries", "English", "183,627", "610", "East Caribbean dollar (XCD)", "UTC−4", "assets/img/saint-lucia.png"],
             ["Samoa", "God be the Foundation of Samoa", "Apia", "English, Samoan", "198,414", "2,830", "Tālā (WST)", "UTC+13 (WST)", "assets/img/samoa.png"],
             ["San Marino", "Liberty", "San Marino", "Italian", "33,931", "60", "Euro (EUR)", "UTC+01 (CET)", "assets/img/san-marino.png"],
