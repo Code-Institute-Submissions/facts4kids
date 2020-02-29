@@ -270,7 +270,7 @@ $(document).ready(function () {
             ["Vietnam", "Independence, Freedom and Happiness", "Hanoi", "Vietnamese", "97,338,579", "310,070", "đồng (VND)", "UTC+07:00 (Vietnam Standard Time)", "assets/img/vietnam.png"],
             
             // Details for Country that start with "Y"
-            ["Yemen", "God, Homeland, Revolution, Unity", "Sana'a (de jure), Ataq (provisional)", "Arabic", "29,825,964", "527,970", "Yemeni rial (YER)", "UTC+3 (AST)", "assets/img/yemen.png"],
+            ["Yemen", "God, Homeland, Revolution, Unity", "Sana'a (de jure), Aden (provisional)", "Arabic", "29,825,964", "527,970", "Yemeni rial (YER)", "UTC+3 (AST)", "assets/img/yemen.png"],
             
             // Details for Country that start with "Z"
             ["Zambia", "One Zambia, one Nation", "Lusaka", "English", "18,383,955", "743,390", "Zambian kwacha (ZMW)", "UTC+2 (CAT)", "assets/img/zambia.png"],
