@@ -229,7 +229,7 @@ $(document).ready(function () {
             ["Slovenia", "No official motto", "Ljubljana", "Slovene", "2,078,938", "20,140", "Euro (EUR)", "UTC+1 (CET)", "assets/img/slovenia.png"],
             ["Solomon Islands", "To lead is to serve", "Honiara", "English", "686,884", "27,990", "Solomon Islands dollar (SBD)", "UTC+11", "assets/img/solomon-islands.png"],
             ["Somalia", "No official motto", "Mogadishu", "Somali, Arabic", "15,893,222", "627,340", "Somali Shilling (SOS)", "UTC+3 (EAT)", "assets/img/somalia.png"],
-            ["South Africa", "Diverse people unite or Unity in Diversity", "Pretoria (executive), Bloemfontein (judicial), Cape Town (legislative)", "", "59,308,690", "1,213,090", "South African rand (ZAR)", "UTC+2 (SAST)", "assets/img/south-africa.png"],
+            ["South Africa", "Diverse people unite or Unity in Diversity", "Pretoria (executive), Bloemfontein (judicial), Cape Town (legislative)", "11 languages: English, Afrikaans, Zulu, Xhosa, Northern, Sotho, Tswana, Southern Sotho, Tsonga, Swazi, Venda, Southern Ndebele", "59,308,690", "1,213,090", "South African rand (ZAR)", "UTC+2 (SAST)", "assets/img/south-africa.png"],
             ["South Korea", "No official motto", "Seoul", "Korean (Pyojun-eo), Korean Sign Language", "51,269,185", "97,230", "Korean Republic won (KRW)", "UTC+9 (Korea Standard Time)", "assets/img/south-korea.png"],
             ["South Sudan", "Justice, Liberty, Prosperity", "Juba", "English", "11,193,725", "610,952", "South Sudanese pound (SSP)", "UTC+3 (East Africa Time)", "assets/img/south-sudan.png"],
             ["Spain", "Further beyond", "Madrid", "Spanish", "46,754,778", "498,800", "Euro (EUR)", "UTC⁠±0 to +1 (WET and CET)", "assets/img/spain.png"],
