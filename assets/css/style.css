@@ -140,6 +140,10 @@ h6 {
     font-family: 'Cabin Sketch', serif;
 }
 
+#siteInfo img {
+    border: 1px solid #000000;
+}
+
 #siteInfo p {
     margin: 0;
     font-family: 'Open Sans', serif;
