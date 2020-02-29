@@ -129,7 +129,7 @@ $(document).ready(function () {
             ["Iceland", " No official motto", "Reykjavík", "Icelandic", "341,243", "100,250", "Icelandic króna (ISK)", "UTC (GMT/WET)", "assets/img/iceland.png"],
             ["India", "Truth alone triumphs", "New Delhi", "Hindi, English", "1,380,004,385", "2,973,190", "Indian rupee (INR)", "UTC+05:30 (IST)", "assets/img/india.png"],
             ["Indonesia", "Unity in diversity", "Jakarta", "Indonesian", "273,523,615", "1,811,570", "Indonesian rupiah (IDR)", "UTC+7 to +9 (Various)", "assets/img/indonesia.png"],
-            ["Iran", "Independence, freedom, (the) Islamic Republic", "Tehran", "Persian", "83,992,949", "1,628,550", "Rial (IRR)", "UTC+3:30 (IRST)", "assets/img/iran.png"],
+            ["Iran", "Independence, Freedom, the Islamic Republic", "Tehran", "Persian", "83,992,949", "1,628,550", "Rial (IRR)", "UTC+3:30 (IRST)", "assets/img/iran.png"],
             ["Iraq", "God is the Greatest", "Baghdad", "Arabic, Kurdish", "40,222,493", "434,320", "Iraqi dinar (IQD)", "UTC+3 (AST)", "assets/img/iraq.png"],
             ["Ireland", "No official motto", "Dublin", "English, Irish", "4,937,786", "68,890", "Euro (EUR)", "Greenwich Mean Time (UTC)", "assets/img/ireland.png"],
             ["Israel", "No official motto", "Jerusalem", "Hebrew", "8,655,535", "21,640", "New shekel (ILS)", "UTC+2 (IST)", "assets/img/israel.png"],
