@@ -96,7 +96,7 @@ $(document).ready(function () {
             ["Egypt", "No official motto", "Cairo", "Arabic", "102,334,404", "995,450", "Egyptian pound (EGP)", "UTC+2 (EET)", "assets/img/egypt.png"],
             ["El Salvador", "God, Union, Liberty", "San Salvador", "Spanish", "6,486,205", "20,720", "United States dollar (USD)", "UTC−6 (CST)", "assets/img/el-salvador.png"],
             ["Equatorial Guinea", "Unity, Peace, Justice", "Malabo (current), Ciudad de la Paz (under construction)", "Spanish, French, Portuguese", "1,402,985", "28,050", "Central African CFA franc (XAF)", "UTC+1 (WAT)", "assets/img/equatorial-guinea.png"],
-            ["Eritrea", "State of Eritrea; also in English", "Asmara", "None", "3,546,421", "101,000", "Nakfa (ERN)", "UTC+3 (EAT)", "assets/img/eritrea.png"],
+            ["Eritrea", "State of Eritrea", "Asmara", "None", "3,546,421", "101,000", "Nakfa (ERN)", "UTC+3 (EAT)", "assets/img/eritrea.png"],
             ["Estonia", "No official motto", "Tallinn", "Estonian", "1,326,535", "42,390", "Euro (EUR)", "UTC+2 (EET)", "assets/img/estonia.png"],
             ["Eswatini", "We are a fortress/We are a mystery/We hide ourselves away/We are powerful ones", "Mhahane, Lobamba", "Swazi, English", "1,160,164", "17,200", "Swazi lilangeni (SZL), South African rand (ZAR)", "UTC+2 (SAST)", "assets/img/eswatini.png"],
             ["Ethiopia", "No official motto", "Addis Ababa(Finfinne)", "Amharic", "114,963,588", "1,000,000", "Birr (ETB)", "UTC+3 (EAT)", "assets/img/ethiopia.png"],
