@@ -67,7 +67,7 @@ $(document).ready(function () {
             
             // Details for Country that start with "C"
             ["Cabo Verde", "Unity, Work, Progress", "Praia", "Portuguese", "555,987", "4,030", "Cape Verdean escudo (CVE)", "UTC-1 (CVT)", "assets/img/cabo-verde.png"],
-            ["Cambodia", "Nation religion King", "Phnom Penh", "Khmer", "16,718,965", "176,520", "Riel (KHR)", "UTC+7 (ICT)", "assets/img/cambodia.png"],
+            ["Cambodia", "Nation, Religion, King", "Phnom Penh", "Khmer", "16,718,965", "176,520", "Riel (KHR)", "UTC+7 (ICT)", "assets/img/cambodia.png"],
             ["Cameroon", "Peace, Work, Fatherland", "Yaoundé", "English, French", "26,545,863", "472,710", "Central African CFA franc (XAF)", "UTC+1 (WAT)", "assets/img/cameroon.png"],
             ["Canada", "From sea to sea", "Ottawa", "English, French", "37,742,154", "9,093,510", "Canadian dollar (CAD)", "UTC−3.5 to −8", "assets/img/canada.png"],
             ["Central African Republic", "Unity, Dignity, Work", "Bangui", "French, Sango", "4,829,767", "622,980", "Central African CFA franc (XAF)", "UTC+1 (WAT)", "assets/img/central-african-republic.png"],
