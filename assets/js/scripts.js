@@ -252,7 +252,7 @@ $(document).ready(function () {
             ["Trinidad and Tobago", "Together we aspire, together we achieve", "Port of Spain", "English", "1,399,488", "5,130", "Trinidad and Tobago dollar (TTD)", "UTC-4 (AST)", "assets/img/trinidad-and-tobago.png"],
             ["Tunisia", "Freedom, Order and Justice", "Tunis", "Arabic", "11,818,619", "155,360", "Tunisian dinar (TND)", "UTC+1 (CET)", "assets/img/tunisia.png"],
             ["Turkey", "No official motto", "Ankara", "Turkish", "84,339,067", "769,630", "Turkish lira (TRY)", "UTC+3 (FET)", "assets/img/turkey.png"],
-            ["Turkmenistan", "No official motto", "Ashgabat", "Turkmen", "6,031,200", "469,930", "Turkmen new manat (TMT)", "", "assets/img/turkmenistan.png"],
+            ["Turkmenistan", "No official motto", "Ashgabat", "Turkmen", "6,031,200", "469,930", "Turkmen new manat (TMT)", "UTC+05 (TMT)", "assets/img/turkmenistan.png"],
             ["Tuvalu", "Tuvalu for the Almighty", "Funafuti", "English, Tuvaluan", "11,792", "30", "Tuvaluan dollar, Australian dollar (AUD)", "UTC+12", "assets/img/tuvalu.png"],
 
             // Details for Country that start with "U"
