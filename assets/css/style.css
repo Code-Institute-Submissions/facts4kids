@@ -1,5 +1,5 @@
 /* Import Google font */
-@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Merriweather|Cabin+Sketch&display=swap');
 
 /* Clear padding, spacing & margin, set default font for website */
 * {
@@ -135,8 +135,9 @@ h6 {
     margin-left: 50px;
 }
 
-#siteInfo p {
+#siteInfo h3, #siteInfo b, #siteInfo p {
     margin: 0;
+    font-family: 'Cabin Sketch', serif;
 }
 
 h3, b {
