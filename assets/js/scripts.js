@@ -62,7 +62,7 @@ $(document).ready(function () {
             ["Brazil", "Order and progress", "Brasilia", "Portuguese", "212,559,417", "8,358,140", "Real (BRL)", "UTC−2 to −5 (BRT)", "assets/img/brazil.png"],
             ["Brunei", "Always in service with God's guidance", "Bandar Seri Begawan", "Malay", "437,479", "5,270", "Brunei dollar (BND)", "UTC+8 (Brunei Darussalam Time)", "assets/img/brunei.png"],
             ["Bulgaria", "Unity makes strength", "Sofia", "Bulgarian", "6,948,445", "108,560", "Lev (BGN)", "UTC+2 (EET)", "assets/img/bulgaria.png"],
-            ["Burkina Faso", "Unity, progress, justice", "Ouagadougou", "French", "20,903,273", "273,600", "West African CFA franc (XOF)", "UTC (GMT)", "assets/img/burkina-faso.png"],
+            ["Burkina Faso", "Unity, Progress, Justice", "Ouagadougou", "French", "20,903,273", "273,600", "West African CFA franc (XOF)", "UTC (GMT)", "assets/img/burkina-faso.png"],
             ["Burundi", "Unity, Work, Progress", "Bujumbura", "Kirundi", "11,890,784", "25,680", "Burundian franc (FBu) (BIF)", "UTC+2 (CAT)", "assets/img/burundi.png"],
             
             // Details for Country that start with "C"
