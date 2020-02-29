@@ -234,7 +234,7 @@ $(document).ready(function () {
             ["South Sudan", "Justice, Liberty, Prosperity", "Juba", "English", "11,193,725", "610,952", "South Sudanese pound (SSP)", "UTC+3 (East Africa Time)", "assets/img/south-sudan.png"],
             ["Spain", "Further beyond", "Madrid", "Spanish", "46,754,778", "498,800", "Euro (EUR)", "UTC⁠±0 to +1 (WET and CET)", "assets/img/spain.png"],
             ["Sri Lanka", "No official motto", "Sri Jayawardenepura Kotte", "Sinhala, Tamil", "21,413,249", "62,710", "Sri Lankan rupee (LKR)", "UTC+5.30 (SLST)", "assets/img/sri-lanka.png"],
-            ["St. Vincent & Grenadines", "Peace and justice", "Kingstown", "English", "110,940", "390", "East Caribbean dollar (XCD)", "UTC-4", "assets/img/saint-vincent-and-the-grenadines.png"],
+            ["St. Vincent and Grenadines", "Peace and justice", "Kingstown", "English", "110,940", "390", "East Caribbean dollar (XCD)", "UTC-4", "assets/img/saint-vincent-and-the-grenadines.png"],
             ["State of Palestine", "No official motto", "Jerusalem, Ramallah", "Arabic", "5,101,414", "6,020", "Egytian pound (EGP), Israeli new shekel (ILS), Jordanian dinar (JOD)", "UTC+2 (Palestine Standard Time)", "assets/img/state-of-palestine.png"],
             ["Sudan", "Victory is ours", "Khartoum", "Arabic, English", "43,849,260", "1,765,048", "Sudanese pound (SDG)", "UTC+2 (CAT)", "assets/img/sudan.png"],
             ["Suriname", "Justice, Piety, Loyalty", "Paramaribo", "Dutch", "586,632", "156,000", "Surinamese dollar (SRD)", "UTC-3 (SRT)", "assets/img/suriname.png"],
