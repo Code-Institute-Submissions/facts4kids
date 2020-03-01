@@ -43,7 +43,7 @@ h1 {
 
 .btn-align {
     margin: 0 auto;
-    display: block;
+    display: flex;
 }
 
 /* More Facts Modal Styling */
