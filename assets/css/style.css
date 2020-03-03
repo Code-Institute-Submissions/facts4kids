@@ -82,6 +82,11 @@ i {
 
 #countries {
     float: right;
+    display: flex;
+}
+
+.info-point {
+    display: inline-block;
 }
 
 /* Content styling */
