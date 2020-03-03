@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#myCenterModal").modal('show');
     var latlng = new google.maps.LatLng(29.077615, 24.864881);
     var options = {
-        zoom: 2,
+        zoom: 3,
         center: latlng,
         gestureHandling: 'cooperative',
         disableDefaultUI: true, 
