@@ -14,7 +14,7 @@ body {
 
 /* Heading styling */
 .navbar-default {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     background-color: #1c1d26;
 }
 
@@ -78,15 +78,11 @@ i {
 
 .info-point {
     cursor: pointer;
+    float: left;
 }
 
 #countries {
     float: right;
-    display: flex;
-}
-
-.info-point {
-    display: inline-block;
 }
 
 /* Content styling */
@@ -176,4 +172,24 @@ h2, b {
 .footer-default i {
     float: right;
     margin: 8px 0 0 5px;
+}
+
+/* ------------------------------------------------------ Media Queries */
+
+@media (min-width: 768px) and (max-width: 2048px) {
+    .info-point {
+        margin: 0;
+        display: none;
+    }
+
+    #countries {
+        margin: 0;
+        float: right;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .info-point, #countries {
+        margin: 0;
+    }
 }
