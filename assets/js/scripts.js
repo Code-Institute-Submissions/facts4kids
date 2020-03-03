@@ -369,7 +369,7 @@ $(document).ready(function () {
         for (i=0; i <landMarkers.length; i++) {
             var position = new google.maps.LatLng(landMarkers[i][0], landMarkers[i][1]);
             var title = landMarkers[i][2];
-            var landContent = '<b>' + landMarkers[i][2] + '</b><hr><br>' + '<p>' + landMarkers[i][4] + '</p><br>' + '<p>' + landMarkers[i][5] + '</p>';
+            var landContent = '<div id="landInfo">' + '<h2><b>' + landMarkers[i][2] + '</b></h2><hr><br>' + '<p>' + landMarkers[i][4] + '</p><br>' + '<p>' + landMarkers[i][5] + '</p>' + '</div>';
             var icon = landMarkers[i][3];
             createMarker(position, title, landContent, icon);
         }
