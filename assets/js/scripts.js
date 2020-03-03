@@ -1,11 +1,16 @@
 // Display Information Modal
 $(document).ready(function () {
     $("#myCenterModal").modal('show');
-    var latlng = new google.maps.LatLng(38.504669, 9.510865);
+    var latlng = new google.maps.LatLng(29.077615, 24.864881);
     var options = {
         zoom: 2,
         center: latlng,
         gestureHandling: 'cooperative',
+        disableDefaultUI: true, 
+        zoomControl: true, 
+        zoomControlOptions: { 
+            position: google.maps.ControlPosition.TOP_LEFT
+        },
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -20,6 +25,11 @@ $(document).ready(function () {
             zoom: parseInt(coordinate[2]),
             center: latlng,
             gestureHandling: 'cooperative',
+            disableDefaultUI: true, 
+            zoomControl: true, 
+            zoomControlOptions: { 
+                position: google.maps.ControlPosition.TOP_LEFT
+            },
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById('map'), options);
@@ -309,6 +319,82 @@ $(document).ready(function () {
             }
         }
     });
+
+    // Reset Dropdown selected Index to 0
+    function reset() {
+        var dropDown = document.getElementById("countries");
+        dropDown.selectedIndex = 0;
+        dropDown[0].disabled = false;
+    }
+
+    function myMarkerFunction() {
+        reset();
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        // Add information window
+        var landInfowindow = new google.maps.InfoWindow();
+
+        var landMarkers = [
+            ["48.858372", "2.294481", "Eiffel Tower", "assets/img/landmark/001-eiffel-tower.png", 
+            "This metal tower with three floors stands in the city center of Paris. It was built for the 1889 World Fair (Universal Expo) to celebrate the 100th anniversary of the French Revolution.", 
+            "The 324 meters/1062 feet high Eiffel Tower was constructed by Auguste Eiffel and a team of engineers. If you would like to take the steps up to the tower viewing platform on the 2nd floor, there are 704 steps to climb, but luckily there are also lifts in each of the leg up to the 2nd floor."],
+            ["40.431910", "116.570374", "Great Wall of China", "assets/img/landmark/002-great-wall-of-china.png", 
+            "The Great Wall is one of the seven wonders of the world. It runs in sections over a very long distance accross China. The wall is also referred to as 'Long Wall' as it is over 21,196 km/13,171 miles long. It was built with stones, bricks and tiles, earth as well as of wooden material. The wall was completed in 1644, but it took more than 2,000 years to build.",
+            "There are more than 20,000 watchtowers along the wall as it was built to protect the country against invasions from nomads and enemies and to make it easier to collect duty for goods that were transported along the Silk Road."],
+            ["55.752025", "37.617500", "The Moscow Kremlin", "assets/img/landmark/003-kremlin.png", 
+            "The Grand Kremlin Palace is part of the Kremlin complex and is located next to the Red Square and St Basil's Cathedral in Russia's capital city Moscow. The Kremlin is a fortress with enclosing walls and is built along the Moskva River. The name 'Kremlin' means 'Fortress within a city'.", 
+            "The more than 500-year-old Kremlin includes the wall with its 20 towers as well as four churches and five palaces within the walls. The Kremlin was once the residence of the Tzars. Today, it is where the Russian president resides. The Cathedral of Vasily the Blessed, usually referred to as Saint Basil's Cathedral, it easily recognized due to its nine brightly coloured onion domes."],
+            ["43.722954", "10.396597", "Leaning Tower of Pisa", "assets/img/landmark/004-leaning-tower-of-pisa.png", 
+            "The Leaning Tower of Pisa is one of Italy's major tourist attractions. The freestanding bell tower of the Pisa Cathedral was built over almost two hundred years and was finished in 1399. The original height of the tower was 60 meters/196 feet, but as it is leaning, the lowest side is now less than 56 meters/184 feet.", 
+            "The construction already caused many problems as the soil was soft, sandy and unstable. The builders tried to balance the leaning side with more columns on the other side, but the tower still leaned. In 2000, the tower was strengthened by putting stronger soil underneath the tower. You can walk up the 251 stairs to the viewing platform at the top of the tower."],
+            ["29.975271", "31.137568", "Great Sphinx of Giza", "assets/img/landmark/005-great-sphinx-of-giza.png", 
+            "The Great Pyramid of Giza near Cairo is one of the Seven Wonders of the Ancient World and the only of these ancient world wonders which still exists. The pyramids are made of stone and bricks and stand near Cairo which is the capital of Egypt. The pyramids were built during a time when there was only manual labour and no machine lifting equipment available.", 
+            "The Egyptian pyramids were build to house the bodies of the pharaoh who ruled in ancient Egypt. Next to the Giza pyramids there is the Sphinx, the famous monument of a lion with a pharaoh's head. The Giza pyramids are around 4,500 years old and are considered among the largest structures ever built."],
+            ["-33.856782", "151.215296", "Sydney Opera House", "assets/img/landmark/006-sydney-opera-house.png", 
+            "The Sydney Opera House, built in Australia's biggest city, is famous for its roof's architecture resembling shells or sails. The opera house was desgined by Jørn Utzon from Denmark and it was built between 1959 and 1973.", 
+            "The roof is covered with more than 1 million roof tiles. These were manufactured in Sweden. The opera house has several performance halls and theatre and exhibition spaces. Every evening the roof is lit up in a colourful spectacle."],
+            ["40.689251", "-74.044501", "Statue of Liberty National Monument", "assets/img/landmark/007-statue-of-liberty.png", 
+            "The Statue of Liberty is 92 meters/305 feet high and is made of a iron structure with copper skin. Lady Liberty, as the statue often is referred to, was designed by Frederic Auguste Bartholdi and the massive iron skeleton of the lady was designed by Alexandre Gustave Eiffel who also designed the Eiffel Tower. This statue was built and completed in France in 1884.", 
+            "The monument was then disassembled into 350 pieces and packed into 214 crates and shipped to New York. The Statue of Liberty was a gift of the people of France to the American people on the American Centennial in 1886. The torch's flame is covered with 24k gold and the crown has seven rays for the seven continents. The monument stands on Liverty Island in the Hudson River facing New York City."],
+            ["27.175148", "78.042142", "Taj Mahal", "assets/img/landmark/008-taj-mahal.png", 
+            "The Taj Mahal, which means 'crown of palaces' in the Persian language, stands on the riverbanks of the Yamuna River in Agra in northern India. In 1632 the emperor, Shah Jahan instructed to build a tomb for his favorite wife, Mumtaz Mahal. The Taj Mahal houses the tomb of the wife as well as a mosque and a guesthouse.",
+            "The Taj Mahal has been built with white marble and the finest material sources from all over Asia. It is decorated with precious and semi-precious stones. Lines from the Quran are depicted on many walls. The main dome of the Taj Mahal is 35 meters/115 feet height and the minarets are each 40 meters/130 feet tall. It is said that more than 20,000 workers built the monument and over 1,000 elephants were used to help with the transport of the heavy material during the construction."],
+            ["-27.143904", "-109.330502", "Moai", "assets/img/landmark/009-moai.png", 
+            "The Moal are huge statues on the Polynesian island Rapa Nui. The island is commonly called Easter Island and belongs to Chile. The Easter Island is more than 2,200 miles away from Chile in the middle of the Pacific Ocean. The islanders created more than 900 carved stones figures between 1250 and 1500. Most of the stone figures with the oversized heads were built with tuff stone and compressed volcanic ash.",
+            "The figures weight on average 14 tons which is as much as two elephants! However, the size of the statues varies, there are some smaller ones and some much bigger ones too. The heaviest stone figure weights 82 tones and is 10 meters/33 feet long! They are about 4 meters/13 feet tall. Most of the islanders believe the huge stone statues represent their ancestors."],
+            ["-13.163130", "-72.544963", "Machu Picchu", "assets/img/landmark/010-machu-picchu.png", 
+            "Machu Picchu which means 'Old Mountain' in the local Quechua language is a famous site in Peru. It is also referred to as 'The Lost City of the Incas'. The ruins of the Lost City are located in the mountains, at more than 2,400 meters/8,000 feet above sea level. This ruin site has more than 200 different buildings and structures. The ruins were never discovered by European conquistadors but only became known in 1911 when an American archeologist was led to the site by locals.", 
+            "As the site is build on a mountain ridge and thus always would be in danger of sliding down the slope during rainy season, over 600 terraces and a well laid-out drainage system were built around the city."]
+        ];
+        
+        for (i=0; i <landMarkers.length; i++) {
+            var position = new google.maps.LatLng(landMarkers[i][0], landMarkers[i][1]);
+            var title = landMarkers[i][2];
+            var landContent = '<b>' + landMarkers[i][2] + '</b><hr><br>' + '<p>' + landMarkers[i][4] + '</p><br>' + '<p>' + landMarkers[i][5] + '</p>';
+            var icon = landMarkers[i][3];
+            createMarker(position, title, landContent, icon);
+        }
+
+        function createMarker(position, title, landContent, icon) {
+            var marker = new google.maps.Marker({
+                position: position,
+                title: title,
+                icon: icon,
+                map: map
+            });
+
+            google.maps.event.addListener(marker, 'click', function () {
+                landInfowindow.setContent(landContent);
+                landInfowindow.open(map, marker);
+            });
+
+            google.maps.event.addListener(map, 'click', function () {
+                landInfowindow.close();
+            });
+        }
+    }
+
+    document.getElementById("land-button").addEventListener("click", myMarkerFunction);
+
     // initializing the map
     var map = new google.maps.Map(document.getElementById('map'), options);
 });
