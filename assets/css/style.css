@@ -175,15 +175,32 @@ h2, b {
 
 /* ------------------------------------------------------ Media Queries */
 
-@media (min-width: 768px) and (max-width: 2048px) { 
+@media (min-width: 768px) and (max-width: 1024px) { 
     #countries {
-        /* margin: 0; */
         float: right;
+    }
+
+    .content-default {
+        height: 53rem;
+    }
+
+    .intro p {
+        font-size: smaller;
+    }
+
+    #map {
+        height: 700px;
+        margin: 10px 0 0 10px;
     }
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
     .info-point, #countries {
+        margin: 0;
+    }
+
+    #map {
+        height: 400px;
         margin: 0;
     }
 }
