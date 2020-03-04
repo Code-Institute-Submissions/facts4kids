@@ -181,7 +181,7 @@ h2, b {
     }
 
     .content-default {
-        height: 53rem;
+        height: 55rem;
     }
 
     .intro p {
@@ -191,6 +191,10 @@ h2, b {
     #map {
         height: 700px;
         margin: 10px 0 0 10px;
+    }
+
+    .footer-default i {
+        margin-right: 15px;
     }
 }
 
