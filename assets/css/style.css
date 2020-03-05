@@ -63,7 +63,7 @@ h1 {
 }
 
 .more-modal-default {
-    margin: 20px 20px 20px 20px;
+    margin: 0 20px 20px 20px;
 }
 
 ul {
@@ -96,6 +96,8 @@ h4 {
 
 h5 {
     font-weight: bold;
+    color: 	#b22222;
+    margin: 15px 0 0 10px;
 }
 
 h6 {
@@ -214,7 +216,7 @@ h2, b {
 
     .content-default {
         margin: 0;
-        height: 70rem;
+        height: 75rem;
     }
    
     .more-modal-default {
