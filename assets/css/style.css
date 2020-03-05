@@ -140,6 +140,15 @@ h6 {
     font-family: 'Cabin Sketch', serif;
 }
 
+#landInfo img {
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 20px 0 0 10px;
+    float: right;
+}
+
 #siteInfo img {
     border: 1px solid #000000;
 }
