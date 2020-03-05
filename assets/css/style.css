@@ -225,4 +225,8 @@ h2, b {
         height: 500px;
         margin: 0;
     }
+
+    #landInfo img {
+        display: none;
+    }
 }
