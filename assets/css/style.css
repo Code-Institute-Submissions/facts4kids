@@ -207,6 +207,10 @@ h2, b {
         font-size: smaller;
     }
 
+    .more-modal-default img {
+        height: 250px;
+    }
+
     #map {
         height: 700px;
         margin: 10px 0 0 10px;
@@ -231,6 +235,10 @@ h2, b {
         margin: 0;
     }
 
+    .more-modal-default img {
+        height: 150px;
+    }
+    
     #map {
         height: 500px;
         margin: 0;
