@@ -66,6 +66,14 @@ h1 {
     margin: 0 20px 20px 20px;
 }
 
+.more-modal-default img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
 ul {
     margin-left: 40px;
 }
