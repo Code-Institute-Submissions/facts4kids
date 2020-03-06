@@ -33,12 +33,9 @@ h1 {
     padding: 10px 10px 10px 10px;
 }
 
-.modal-default {
-    margin: 5px 10px 5px 10px;
-}
-
-.modal-default p {
-    text-align: center;
+.modal-default img {
+    float: right;
+    margin: 15px;
 }
 
 .btn-align {
