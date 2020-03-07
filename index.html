@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Browser Tab Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/ico/globe.ico" />
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		type="text/css" />
@@ -17,9 +20,6 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-    <!-- Browser Tab Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/ico/globe.ico" />
-
     <title>Facts for Kids</title>
 </head>
 
@@ -29,7 +29,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header row">
-					<h1 class="modal-title text-warning bg-dark modal-title-align col-sm-12">Facts for
+					<h1 class="modal-title text-warning bg-dark col-sm-12 modal-title-align">Facts for
 						Kids<button type="button" class="close cross-color" data-dismiss="modal">&times;</button></h1>
 				</div>
 				<div class="modal-body modal-default">
@@ -47,17 +47,17 @@
                         <h5>Instructions</h5>
                     </div>					
                     <hr>
-                    <div class="info-modal-container">
+                    <div class="info-instruction">
                         <img class="drop-down" src="assets/img/modal/drop-down.png" alt="dropdown" height="80">
                         <p>Select a country.</p>
                     </div>
                     <br><br><br>
-                    <div class="info-modal-container">
+                    <div class="info-instruction">
                         <img class="click-button" src="assets/img/modal/click.png" alt="click-button" height="80">
                         <p>Click to show the landmarks.</p>
                     </div>
                     <br><br><br>
-                    <div class="info-modal-container">
+                    <div class="info-instruction">
                         <img class="show-map" src="assets/img/modal/map.png" alt="show-map" height="80">
                         <p>Explore the world with us!</p>
                     </div>           
@@ -76,239 +76,239 @@
 		<nav class="container-fluid navbar navbar-expand-sm navbar-default">
 
 			<!-- Website Logo -->
-                    <div class="col-lg-9">
-                        <a class="navbar-brand" href="index.html">
-                            <h1 class="logo">Facts4Kids</h1>
-                        </a>
-                    </div>
+            <div class="col-lg-9">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="logo">Facts4Kids</h1>
+                </a>
+            </div>
 
-                    <!-- Country selection drop down -->
-                    <div class="col-lg-3">
-                        <a data-toggle="modal"
-                            data-target="#myCenterModal"><i class="fa fa-info-circle fa-lg info-point"></i></a>
-                        <select id="countries">
-                            <option selected="selected">Select a Country</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>A</option>
-                            <option value="33.174616, 64.705460, 6">Afghanistan</option>
-                            <option value="41.259102, 19.984591, 7">Albania</option>
-                            <option value="29.496642, 2.536171, 5">Algeria</option>
-                            <option value="42.545726, 1.570198, 10">Andorra</option>
-                            <option value="-11.546136, 17.477944, 5">Angola</option>
-                            <option value="17.358474, -61.805623, 9">Antigua and Barbuda</option>
-                            <option value="-36.704553, -66.954570, 4">Argentina</option>
-                            <option value="40.371414, 44.820493, 7">Armenia</option>
-                            <option value="-25.821328, 133.555528, 4">Australia</option>
-                            <option value="47.333219, 14.124257, 7">Austria</option>
-                            <option value="40.664491, 47.499833, 7">Azerbaijan</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>B</option>
-                            <option value="24.290367,-76.628430, 8">Bahamas</option>
-                            <option value="26.065342, 50.549084, 10">Bahrain</option>
-                            <option value="23.963293, 90.033861, 7">Bangladesh</option>
-                            <option value="13.172093, -59.569598, 10">Barbados</option>
-                            <option value="53.476454, 27.997218, 6">Belarus</option>
-                            <option value="50.708374, 4.487693, 7">Belgium</option>
-                            <option value="17.486567, -88.419746, 8">Belize</option>
-                            <option value="9.159367, 2.229160, 6">Benin</option>
-                            <option value="27.348098, 90.418723, 8">Bhutan</option>
-                            <option value="-16.257320, -64.904126, 5">Bolivia</option>
-                            <option value="44.171686, 17.645093, 7">Bosnia and Herzegovina</option>
-                            <option value="-21.751207, 23.619330, 6">Botswana</option>
-                            <option value="-12.418613, -51.228947, 4">Brazil</option>
-                            <option value="4.533486, 114.774325, 9">Brunei</option>
-                            <option value="42.687338, 25.266762, 7">Bulgaria</option>
-                            <option value="12.248880, -2.128983, 6">Burkina Faso</option>
-                            <option value="-3.460165, 29.754192, 8">Burundi</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>C</option>
-                            <option value="15.904024, -24.022339, 8">Cabo Verde</option>
-                            <option value="12.780053, 104.955386, 7">Cambodia</option>
-                            <option value="5.600633, 12.871642, 6">Cameroon</option>
-                            <option value="60.402599, -110.593656, 4">Canada</option>
-                            <option value="6.600293, 20.437617, 6">Central African Republic</option>
-                            <option value="15.093658, 18.837165, 5">Chad</option>
-                            <option value="-29.710498, -70.809884, 4">Chile</option>
-                            <option value="34.705267, 103.196973, 4">China</option>
-                            <option value="3.755059, -72.927285, 5">Colombia</option>
-                            <option value="-12.087869, 43.746005, 9">Comoros</option>
-                            <option value="-1.065656, 15.395711, 5">Congo</option>
-                            <option value="10.043336, -84.053922, 7">Costa Rica</option>
-                            <option value="7.656879, -5.462997, 7">Côte d'Ivoire</option>
-                            <option value="45.080152, 14.921579, 7">Croatia</option>
-                            <option value="21.679854, -78.631462, 7">Cuba</option>
-                            <option value="35.039429, 33.235542, 9">Cyprus</option>
-                            <option value="49.689812, 15.187879, 7">Czech Republic (Czechia)</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>D</option>
-                            <option value="55.593909, 10.157271, 7">Denmark</option>
-                            <option value="11.745557, 42.561275, 8">Djibouti</option>
-                            <option value="15.428977, -61.342409, 10">Dominica</option>
-                            <option value="18.910993, -70.520786, 7">Dominican Republic</option>
-                            <option value="-2.974629, 23.141507, 5">DR Congo</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>E</option>
-                            <option value="-1.509000, -78.419069, 6">Ecuador</option>
-                            <option value="26.540483, 30.008030, 5">Egypt</option>
-                            <option value="13.666394, -88.859582, 8">El Salvador</option>
-                            <option value="1.626378, 10.411745, 8">Equatorial Guinea</option>
-                            <option value="15.335443, 38.829340, 6">Eritrea</option>
-                            <option value="58.698070, 25.678402, 7">Estonia</option>
-                            <option value="-26.573078, 31.476345, 8">Eswatini</option>
-                            <option value="8.491781, 39.583066, 6">Ethiopia</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>F</option>
-                            <option value="-17.430699, 178.634335, 8">Fiji</option>
-                            <option value="64.923053, 27.374049, 5">Finland</option>
-                            <option value="46.510741, 2.420000, 5">France</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>G</option>
-                            <option value="-0.604462, 11.811143, 7">Gabon</option>
-                            <option value="13.473771, -15.347666, 8">Gambia</option>
-                            <option value="42.128045, 43.454658, 7">Georgia</option>
-                            <option value="51.076121, 10.209100, 6">Germany</option>
-                            <option value="7.942004, -1.154592, 7">Ghana</option>
-                            <option value="39.434889, 21.840546, 7">Greece</option>
-                            <option value="12.263686, -61.588971, 10">Grenada</option>
-                            <option value="15.721959, -90.336840, 7">Guatemala</option>
-                            <option value="10.649662, -11.034761, 7">Guinea</option>
-                            <option value="11.962042, -14.927415, 8">Guinea-Bissau</option>
-                            <option value="4.841171, -58.956385, 7">Guyana</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>H</option>
-                            <option value="18.787572, -72.736663, 8">Haiti</option>
-                            <option value="41.903290, 12.452577, 15">Holy See</option>
-                            <option value="14.608041, -86.772771, 7">Honduras</option>
-                            <option value="46.944614, 19.129825, 7">Hungary</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>I</option>
-                            <option value="64.749924, -18.565018, 6">Iceland</option>
-                            <option value="20.462203, 78.336192, 5">India</option>
-                            <option value="-2.056837, 120.198127, 5">Indonesia</option>
-                            <option value="31.712726, 54.034466, 5">Iran</option>
-                            <option value="32.992864, 43.111198, 6">Iraq</option>
-                            <option value="53.086138, -7.867334, 7">Ireland</option>
-                            <option value="30.869731, 34.872978, 7">Israel</option>
-                            <option value="42.755189, 12.463369, 6">Italy</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>J</option>
-                            <option value="18.113303, -77.391645, 9">Jamaica</option>
-                            <option value="36.826501, 139.485437, 5">Japan</option>
-                            <option value="31.053554, 36.427969, 7">Jordan</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>K</option>
-                            <option value="47.551818, 65.474318, 5">Kazakhstan</option>
-                            <option value="0.088167, 37.628765, 6">Kenya</option>
-                            <option value="-4.531624, -167.971033, 5">Kiribati</option>
-                            <option value="29.372758, 47.439434, 8">Kuwait</option>
-                            <option value="41.185178, 74.468786, 7">Kyrgyzstan</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>L</option>
-                            <option value="18.094373, 104.548258, 6">Laos</option>
-                            <option value="56.721694, 24.927616, 7">Latvia</option>
-                            <option value="33.899650, 35.899448, 8">Lebanon</option>
-                            <option value="-29.580265, 28.232839, 8">Lesotho</option>
-                            <option value="6.143873, -9.192112, 7">Liberia</option>
-                            <option value="26.565482, 17.559704, 5">Libya</option>
-                            <option value="47.132246, 9.564614, 11">Liechtenstein</option>
-                            <option value="55.278333, 23.871251, 7">Lithuania</option>
-                            <option value="49.753653, 6.105747, 9">Luxembourg</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>M</option>
-                            <option value="-19.560596, 46.348387, 5">Madagascar</option>
-                            <option value="-13.836707, 34.226399, 6">Malawi</option>
-                            <option value="2.992776, 107.733788, 5">Malaysia</option>
-                            <option value="0.071821, 73.048686, 7">Maldives</option>
-                            <option value="15.797627, -3.275533, 5">Mali</option>
-                            <option value="35.914012, 14.395507, 11">Malta</option>
-                            <option value="7.213132, 168.586283, 6">Marshall Islands</option>
-                            <option value="19.847474, -10.459063, 5">Mauritania</option>
-                            <option value="-20.301011, 57.553944, 10">Mauritius</option>
-                            <option value="23.172506, -102.901661, 5">Mexico</option>
-                            <option value="7.552891, 150.621396, 6">Micronesia</option>
-                            <option value="47.204712, 28.619143, 7">Moldova</option>
-                            <option value="43.738408, 7.423792, 14">Monaco</option>
-                            <option value="46.179176, 102.769056, 5">Mongolia</option>
-                            <option value="42.757358, 19.206101, 8">Montenegro</option>
-                            <option value="30.480218, -7.908147, 5">Morocco</option>
-                            <option value="-18.338138, 34.725941, 5">Mozambique</option>
-                            <option value="20.601191, 96.162775, 5">Myanmar</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>N</option>
-                            <option value="-22.477998, 16.748791, 5">Namibia</option>
-                            <option value="-0.529525, 166.934981, 13">Nauru</option>
-                            <option value="27.972252, 84.149457, 7">Nepal</option>
-                            <option value="51.887633, 5.256171, 7">Netherlands</option>
-                            <option value="-41.734699, 172.815183, 5">New Zealand</option>
-                            <option value="12.580718, -84.987980, 7">Nicaragua</option>
-                            <option value="16.832347, 10.065743, 5">Niger</option>
-                            <option value="9.049908, 8.068733, 6">Nigeria</option>
-                            <option value="40.043639, 126.861782, 6">North Korea</option>
-                            <option value="41.609309, 21.669695, 9">North Macedonia</option>
-                            <option value="64.818347, 12.854823, 4">Norway</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>O</option>
-                            <option value="20.236471, 56.446316, 6">Oman</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>P</option>
-                            <option value="29.405759, 68.634103, 6">Pakistan</option>
-                            <option value="5.172346, 133.205628, 7">Palau</option>
-                            <option value="8.729882, -80.306447, 7">Panama</option>
-                            <option value="-6.166521, 146.452617, 6">Papua New Guinea</option>
-                            <option value="-23.551770, -58.329734, 6">Paraguay</option>
-                            <option value="-9.607502, -74.879578, 5">Peru</option>
-                            <option value="11.470266, 123.598744, 6">Philippines</option>
-                            <option value="52.152434, 19.504896, 6">Poland</option>
-                            <option value="39.335404, -8.049273, 6">Portugal</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>Q</option>
-                            <option value="25.246202, 51.203854, 8">Qatar</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>R</option>
-                            <option value="45.746746, 25.014739, 6">Romania</option>
-                            <option value="62.307123, 94.401485, 3">Russia</option>
-                            <option value="-2.056105, 29.954409, 8">Rwanda</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>S</option>
-                            <option value="17.279714, -62.680131, 11">Saint Kitts and Nevis</option>
-                            <option value="13.894150, -60.971214, 11">Saint Lucia</option>
-                            <option value="-13.804541, -172.078396, 10">Samoa</option>
-                            <option value="43.939148, 12.466614, 12">San Marino</option>
-                            <option value="0.761288, 6.941115, 8">São Tomé and Príncipe</option>
-                            <option value="24.655671, 44.046800, 5">Saudi Arabia</option>
-                            <option value="14.202182, -14.377260, 7">Senegal</option>
-                            <option value="43.991547, 20.821781, 7">Serbia</option>
-                            <option value="-7.330365, 51.545937, 6">Seychelles</option>
-                            <option value="8.426131, -11.783323, 7">Sierra Leone</option>
-                            <option value="1.362048, 103.801667, 11">Singapore</option>
-                            <option value="48.701491, 19.368466, 7">Slovakia</option>
-                            <option value="46.079029, 14.767352, 8">Slovenia</option>
-                            <option value="-9.459125, 159.864488, 6">Solomon Islands</option>
-                            <option value="4.596166, 46.464085, 5">Somalia</option>
-                            <option value="-30.172467, 24.620076, 5">South Africa</option>
-                            <option value="36.472532, 128.046810, 6">South Korea</option>
-                            <option value="7.163450, 30.514305, 6">South Sudan</option>
-                            <option value="40.037637, -3.390899, 6">Spain</option>
-                            <option value="7.579560, 80.735872, 7">Sri Lanka</option>
-                            <option value="13.249632, -61.191433, 7">St. Vincent and Grenadines</option>
-                            <option value="31.768346, 35.213764, 8">State of Palestine</option>
-                            <option value="16.310090, 30.569318, 5">Sudan</option>
-                            <option value="4.035204, -55.867261, 7">Suriname</option>
-                            <option value="62.925395, 15.824080, 4">Sweden</option>
-                            <option value="46.882858, 8.240250, 7">Switzerland</option>
-                            <option value="34.884494, 38.450860, 6">Syria</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>T</option>
-                            <option value="38.793918, 71.278851, 6">Tajikistan</option>
-                            <option value="-7.051672, 34.754469, 6">Tanzania</option>
-                            <option value="14.855635, 101.277404, 5">Thailand</option>
-                            <option value="-8.863687, 125.854630, 7">Timor-Leste</option>
-                            <option value="8.614764, 1.092780, 7">Togo</option>
-                            <option value="-20.059017, -174.531880, 8">Tonga</option>
-                            <option value="10.504521, -61.255826, 8">Trinidad and Tobago</option>
-                            <option value="33.909913, 9.309357, 6">Tunisia</option>
-                            <option value="38.809776, 35.896439, 6">Turkey</option>
-                            <option value="39.014420, 59.548131, 6">Turkmenistan</option>
-                            <option value="-7.094880, 177.656582, 7">Tuvalu</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>U</option>
-                            <option value="1.257271, 32.398724, 7">Uganda</option>
-                            <option value="48.787041, 31.569907, 5">Ukraine</option>
-                            <option value="23.574470, 54.084885, 7">United Arab Emirates</option>
-                            <option value="54.346903, -2.222707, 5">United Kingdom</option>
-                            <option value="39.676439, -101.408407, 4">United States</option>
-                            <option value="-32.942354, -56.039779, 6">Uruguay</option>
-                            <option value="41.409309, 63.380000, 6">Uzbekistan</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>V</option>
-                            <option value="-17.189900, 168.134173, 7">Vanuatu</option>
-                            <option value="6.636792, -65.993147, 5">Venezuela</option>
-                            <option value="14.070385, 108.466521, 6">Vietnam</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>Y</option>
-                            <option value="15.861299, 48.025933, 6">Yemen</option>
-                            <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>Z</option>
-                            <option value="-14.467003, 27.685452, 6">Zambia</option>
-                            <option value="-19.199324, 29.896814, 6">Zimbabwe</option>                   
-                        </select>
-                    </div>
+            <!-- Countries Drop Down Selection -->
+            <div class="col-lg-3">
+                <a data-toggle="modal"
+                    data-target="#myCenterModal"><i class="fa fa-info-circle fa-lg info-point"></i></a>
+                    <select id="countries">
+                        <option selected="selected">Select a Country</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>A</option>
+                        <option value="33.174616, 64.705460, 6">Afghanistan</option>
+                        <option value="41.259102, 19.984591, 7">Albania</option>
+                        <option value="29.496642, 2.536171, 5">Algeria</option>
+                        <option value="42.545726, 1.570198, 10">Andorra</option>
+                        <option value="-11.546136, 17.477944, 5">Angola</option>
+                        <option value="17.358474, -61.805623, 9">Antigua and Barbuda</option>
+                        <option value="-36.704553, -66.954570, 4">Argentina</option>
+                        <option value="40.371414, 44.820493, 7">Armenia</option>
+                        <option value="-25.821328, 133.555528, 4">Australia</option>
+                        <option value="47.333219, 14.124257, 7">Austria</option>
+                        <option value="40.664491, 47.499833, 7">Azerbaijan</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>B</option>
+                        <option value="24.290367,-76.628430, 8">Bahamas</option>
+                        <option value="26.065342, 50.549084, 10">Bahrain</option>
+                        <option value="23.963293, 90.033861, 7">Bangladesh</option>
+                        <option value="13.172093, -59.569598, 10">Barbados</option>
+                        <option value="53.476454, 27.997218, 6">Belarus</option>
+                        <option value="50.708374, 4.487693, 7">Belgium</option>
+                        <option value="17.486567, -88.419746, 8">Belize</option>
+                        <option value="9.159367, 2.229160, 6">Benin</option>
+                        <option value="27.348098, 90.418723, 8">Bhutan</option>
+                        <option value="-16.257320, -64.904126, 5">Bolivia</option>
+                        <option value="44.171686, 17.645093, 7">Bosnia and Herzegovina</option>
+                        <option value="-21.751207, 23.619330, 6">Botswana</option>
+                        <option value="-12.418613, -51.228947, 4">Brazil</option>
+                        <option value="4.533486, 114.774325, 9">Brunei</option>
+                        <option value="42.687338, 25.266762, 7">Bulgaria</option>
+                        <option value="12.248880, -2.128983, 6">Burkina Faso</option>
+                        <option value="-3.460165, 29.754192, 8">Burundi</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>C</option>
+                        <option value="15.904024, -24.022339, 8">Cabo Verde</option>
+                        <option value="12.780053, 104.955386, 7">Cambodia</option>
+                        <option value="5.600633, 12.871642, 6">Cameroon</option>
+                        <option value="60.402599, -110.593656, 4">Canada</option>
+                        <option value="6.600293, 20.437617, 6">Central African Republic</option>
+                        <option value="15.093658, 18.837165, 5">Chad</option>
+                        <option value="-29.710498, -70.809884, 4">Chile</option>
+                        <option value="34.705267, 103.196973, 4">China</option>
+                        <option value="3.755059, -72.927285, 5">Colombia</option>
+                        <option value="-12.087869, 43.746005, 9">Comoros</option>
+                        <option value="-1.065656, 15.395711, 5">Congo</option>
+                        <option value="10.043336, -84.053922, 7">Costa Rica</option>
+                        <option value="7.656879, -5.462997, 7">Côte d'Ivoire</option>
+                        <option value="45.080152, 14.921579, 7">Croatia</option>
+                        <option value="21.679854, -78.631462, 7">Cuba</option>
+                        <option value="35.039429, 33.235542, 9">Cyprus</option>
+                        <option value="49.689812, 15.187879, 7">Czech Republic (Czechia)</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>D</option>
+                        <option value="55.593909, 10.157271, 7">Denmark</option>
+                        <option value="11.745557, 42.561275, 8">Djibouti</option>
+                        <option value="15.428977, -61.342409, 10">Dominica</option>
+                        <option value="18.910993, -70.520786, 7">Dominican Republic</option>
+                        <option value="-2.974629, 23.141507, 5">DR Congo</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>E</option>
+                        <option value="-1.509000, -78.419069, 6">Ecuador</option>
+                        <option value="26.540483, 30.008030, 5">Egypt</option>
+                        <option value="13.666394, -88.859582, 8">El Salvador</option>
+                        <option value="1.626378, 10.411745, 8">Equatorial Guinea</option>
+                        <option value="15.335443, 38.829340, 6">Eritrea</option>
+                        <option value="58.698070, 25.678402, 7">Estonia</option>
+                        <option value="-26.573078, 31.476345, 8">Eswatini</option>
+                        <option value="8.491781, 39.583066, 6">Ethiopia</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>F</option>
+                        <option value="-17.430699, 178.634335, 8">Fiji</option>
+                        <option value="64.923053, 27.374049, 5">Finland</option>
+                        <option value="46.510741, 2.420000, 5">France</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>G</option>
+                        <option value="-0.604462, 11.811143, 7">Gabon</option>
+                        <option value="13.473771, -15.347666, 8">Gambia</option>
+                        <option value="42.128045, 43.454658, 7">Georgia</option>
+                        <option value="51.076121, 10.209100, 6">Germany</option>
+                        <option value="7.942004, -1.154592, 7">Ghana</option>
+                        <option value="39.434889, 21.840546, 7">Greece</option>
+                        <option value="12.263686, -61.588971, 10">Grenada</option>
+                        <option value="15.721959, -90.336840, 7">Guatemala</option>
+                        <option value="10.649662, -11.034761, 7">Guinea</option>
+                        <option value="11.962042, -14.927415, 8">Guinea-Bissau</option>
+                        <option value="4.841171, -58.956385, 7">Guyana</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>H</option>
+                        <option value="18.787572, -72.736663, 8">Haiti</option>
+                        <option value="41.903290, 12.452577, 15">Holy See</option>
+                        <option value="14.608041, -86.772771, 7">Honduras</option>
+                        <option value="46.944614, 19.129825, 7">Hungary</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>I</option>
+                        <option value="64.749924, -18.565018, 6">Iceland</option>
+                        <option value="20.462203, 78.336192, 5">India</option>
+                        <option value="-2.056837, 120.198127, 5">Indonesia</option>
+                        <option value="31.712726, 54.034466, 5">Iran</option>
+                        <option value="32.992864, 43.111198, 6">Iraq</option>
+                        <option value="53.086138, -7.867334, 7">Ireland</option>
+                        <option value="30.869731, 34.872978, 7">Israel</option>
+                        <option value="42.755189, 12.463369, 6">Italy</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>J</option>
+                        <option value="18.113303, -77.391645, 9">Jamaica</option>
+                        <option value="36.826501, 139.485437, 5">Japan</option>
+                        <option value="31.053554, 36.427969, 7">Jordan</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>K</option>
+                        <option value="47.551818, 65.474318, 5">Kazakhstan</option>
+                        <option value="0.088167, 37.628765, 6">Kenya</option>
+                        <option value="-4.531624, -167.971033, 5">Kiribati</option>
+                        <option value="29.372758, 47.439434, 8">Kuwait</option>
+                        <option value="41.185178, 74.468786, 7">Kyrgyzstan</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>L</option>
+                        <option value="18.094373, 104.548258, 6">Laos</option>
+                        <option value="56.721694, 24.927616, 7">Latvia</option>
+                        <option value="33.899650, 35.899448, 8">Lebanon</option>
+                        <option value="-29.580265, 28.232839, 8">Lesotho</option>
+                        <option value="6.143873, -9.192112, 7">Liberia</option>
+                        <option value="26.565482, 17.559704, 5">Libya</option>
+                        <option value="47.132246, 9.564614, 11">Liechtenstein</option>
+                        <option value="55.278333, 23.871251, 7">Lithuania</option>
+                        <option value="49.753653, 6.105747, 9">Luxembourg</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>M</option>
+                        <option value="-19.560596, 46.348387, 5">Madagascar</option>
+                        <option value="-13.836707, 34.226399, 6">Malawi</option>
+                        <option value="2.992776, 107.733788, 5">Malaysia</option>
+                        <option value="0.071821, 73.048686, 7">Maldives</option>
+                        <option value="15.797627, -3.275533, 5">Mali</option>
+                        <option value="35.914012, 14.395507, 11">Malta</option>
+                        <option value="7.213132, 168.586283, 6">Marshall Islands</option>
+                        <option value="19.847474, -10.459063, 5">Mauritania</option>
+                        <option value="-20.301011, 57.553944, 10">Mauritius</option>
+                        <option value="23.172506, -102.901661, 5">Mexico</option>
+                        <option value="7.552891, 150.621396, 6">Micronesia</option>
+                        <option value="47.204712, 28.619143, 7">Moldova</option>
+                        <option value="43.738408, 7.423792, 14">Monaco</option>
+                        <option value="46.179176, 102.769056, 5">Mongolia</option>
+                        <option value="42.757358, 19.206101, 8">Montenegro</option>
+                        <option value="30.480218, -7.908147, 5">Morocco</option>
+                        <option value="-18.338138, 34.725941, 5">Mozambique</option>
+                        <option value="20.601191, 96.162775, 5">Myanmar</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>N</option>
+                        <option value="-22.477998, 16.748791, 5">Namibia</option>
+                        <option value="-0.529525, 166.934981, 13">Nauru</option>
+                        <option value="27.972252, 84.149457, 7">Nepal</option>
+                        <option value="51.887633, 5.256171, 7">Netherlands</option>
+                        <option value="-41.734699, 172.815183, 5">New Zealand</option>
+                        <option value="12.580718, -84.987980, 7">Nicaragua</option>
+                        <option value="16.832347, 10.065743, 5">Niger</option>
+                        <option value="9.049908, 8.068733, 6">Nigeria</option>
+                        <option value="40.043639, 126.861782, 6">North Korea</option>
+                        <option value="41.609309, 21.669695, 9">North Macedonia</option>
+                        <option value="64.818347, 12.854823, 4">Norway</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>O</option>
+                        <option value="20.236471, 56.446316, 6">Oman</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>P</option>
+                        <option value="29.405759, 68.634103, 6">Pakistan</option>
+                        <option value="5.172346, 133.205628, 7">Palau</option>
+                        <option value="8.729882, -80.306447, 7">Panama</option>
+                        <option value="-6.166521, 146.452617, 6">Papua New Guinea</option>
+                        <option value="-23.551770, -58.329734, 6">Paraguay</option>
+                        <option value="-9.607502, -74.879578, 5">Peru</option>
+                        <option value="11.470266, 123.598744, 6">Philippines</option>
+                        <option value="52.152434, 19.504896, 6">Poland</option>
+                        <option value="39.335404, -8.049273, 6">Portugal</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>Q</option>
+                        <option value="25.246202, 51.203854, 8">Qatar</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>R</option>
+                        <option value="45.746746, 25.014739, 6">Romania</option>
+                        <option value="62.307123, 94.401485, 3">Russia</option>
+                        <option value="-2.056105, 29.954409, 8">Rwanda</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>S</option>
+                        <option value="17.279714, -62.680131, 11">Saint Kitts and Nevis</option>
+                        <option value="13.894150, -60.971214, 11">Saint Lucia</option>
+                        <option value="-13.804541, -172.078396, 10">Samoa</option>
+                        <option value="43.939148, 12.466614, 12">San Marino</option>
+                        <option value="0.761288, 6.941115, 8">São Tomé and Príncipe</option>
+                        <option value="24.655671, 44.046800, 5">Saudi Arabia</option>
+                        <option value="14.202182, -14.377260, 7">Senegal</option>
+                        <option value="43.991547, 20.821781, 7">Serbia</option>
+                        <option value="-7.330365, 51.545937, 6">Seychelles</option>
+                        <option value="8.426131, -11.783323, 7">Sierra Leone</option>
+                        <option value="1.362048, 103.801667, 11">Singapore</option>
+                        <option value="48.701491, 19.368466, 7">Slovakia</option>
+                        <option value="46.079029, 14.767352, 8">Slovenia</option>
+                        <option value="-9.459125, 159.864488, 6">Solomon Islands</option>
+                        <option value="4.596166, 46.464085, 5">Somalia</option>
+                        <option value="-30.172467, 24.620076, 5">South Africa</option>
+                        <option value="36.472532, 128.046810, 6">South Korea</option>
+                        <option value="7.163450, 30.514305, 6">South Sudan</option>
+                        <option value="40.037637, -3.390899, 6">Spain</option>
+                        <option value="7.579560, 80.735872, 7">Sri Lanka</option>
+                        <option value="13.249632, -61.191433, 7">St. Vincent and Grenadines</option>
+                        <option value="31.768346, 35.213764, 8">State of Palestine</option>
+                        <option value="16.310090, 30.569318, 5">Sudan</option>
+                        <option value="4.035204, -55.867261, 7">Suriname</option>
+                        <option value="62.925395, 15.824080, 4">Sweden</option>
+                        <option value="46.882858, 8.240250, 7">Switzerland</option>
+                        <option value="34.884494, 38.450860, 6">Syria</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>T</option>
+                        <option value="38.793918, 71.278851, 6">Tajikistan</option>
+                        <option value="-7.051672, 34.754469, 6">Tanzania</option>
+                        <option value="14.855635, 101.277404, 5">Thailand</option>
+                        <option value="-8.863687, 125.854630, 7">Timor-Leste</option>
+                        <option value="8.614764, 1.092780, 7">Togo</option>
+                        <option value="-20.059017, -174.531880, 8">Tonga</option>
+                        <option value="10.504521, -61.255826, 8">Trinidad and Tobago</option>
+                        <option value="33.909913, 9.309357, 6">Tunisia</option>
+                        <option value="38.809776, 35.896439, 6">Turkey</option>
+                        <option value="39.014420, 59.548131, 6">Turkmenistan</option>
+                        <option value="-7.094880, 177.656582, 7">Tuvalu</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>U</option>
+                        <option value="1.257271, 32.398724, 7">Uganda</option>
+                        <option value="48.787041, 31.569907, 5">Ukraine</option>
+                        <option value="23.574470, 54.084885, 7">United Arab Emirates</option>
+                        <option value="54.346903, -2.222707, 5">United Kingdom</option>
+                        <option value="39.676439, -101.408407, 4">United States</option>
+                        <option value="-32.942354, -56.039779, 6">Uruguay</option>
+                        <option value="41.409309, 63.380000, 6">Uzbekistan</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>V</option>
+                        <option value="-17.189900, 168.134173, 7">Vanuatu</option>
+                        <option value="6.636792, -65.993147, 5">Venezuela</option>
+                        <option value="14.070385, 108.466521, 6">Vietnam</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>Y</option>
+                        <option value="15.861299, 48.025933, 6">Yemen</option>
+                        <option value="#D3D3D3" style="background-color:#D3D3D3;" disabled>Z</option>
+                        <option value="-14.467003, 27.685452, 6">Zambia</option>
+                        <option value="-19.199324, 29.896814, 6">Zimbabwe</option>                   
+                    </select>
+            </div>
 		</nav>
 	</header>
 
@@ -334,7 +334,7 @@
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header row">
-								<h1 class="modal-title text-warning bg-dark more-modal-title-align col-sm-12">More
+								<h1 class="modal-title text-warning bg-dark col-sm-12 more-modal-title-align">More
 									Interesting Facts
 									<button type="button" class="close cross-color" data-dismiss="modal">&times;</button>
 								</h1>
@@ -514,7 +514,6 @@
                 onclick="window.open('mailto:kongteckmee@gmail.com?subject=I Have Something to Say!&body=Hello!%0D%0A%0D%0AEmail Content...%0D%0A%0D%0A%0D%0ABest%20Wishes,%0D%0A%0D%0AYour Name%0D%0A%0D%0A');">email</a> here.</h6>
 			</div>
 		</div>
-
 	</section>
 
 	<!-- Website Footer -->
@@ -526,7 +525,6 @@
 
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
     -->
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDPNVPNmR1vYmuT3WeRitQXF9YpHX7zJs">

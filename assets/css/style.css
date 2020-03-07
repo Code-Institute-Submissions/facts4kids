@@ -1,7 +1,7 @@
 /* Import Google font */
 @import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Merriweather|Cabin+Sketch|Open+Sans&display=swap');
 
-/* Clear padding, spacing & margin, set default font for website */
+/* --- Clear padding & margin, set default font & background color --- */
 * {
     padding: 0;
     margin: 0;
@@ -12,9 +12,8 @@ body {
     background: #f0f0f0;
 }
 
-/* Heading styling */
+/* --- Navbar --- */
 .navbar-default {
-    /* padding-left: 20px; */
     background-color: #1c1d26;
 }
 
@@ -26,45 +25,21 @@ h1 {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
-/* Intro Modal styling */
-.modal-title-align {
-    margin-left: 0 auto;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-}
-
-.globe {
-    float: right;
-    margin: 15px;
-}
-
-.modal-default p {
+i {
+    color: #daa520;
     margin-left: 20px;
 }
 
-.info-modal-container {
-    height: 40px;
+.info-point {
+    cursor: pointer;
 }
 
-.info-modal-container p {
-    line-height: 110px;
-    font-family: 'Cabin Sketch', serif;
-    font-size: medium;
-    font-weight: bold;
+#countries {
+    float: right;
 }
 
-.drop-down, .click-button, .show-map {
-    float: left;
-    margin: 15px;
-}
-
-.btn-align {
-    margin: 0 auto;
-    display: flex;
-}
-
-/* More Facts Modal Styling */
-.more-modal-title-align {
+/* --- Intro Modal --- */
+.modal-title-align {
     margin-left: 0 auto;
     text-align: center;
     padding: 10px 10px 10px 10px;
@@ -77,6 +52,90 @@ h1 {
 
 .cross-color:hover {
     color: #fafafa;
+}
+
+.modal-default {
+    margin-left: 20px;
+}
+
+.globe {
+    float: right;
+    margin: 15px;
+}
+
+h5 {
+    font-weight: bold;
+    color: 	#b22222;
+    margin: 15px 0 0 10px;
+}
+
+.info-instruction {
+    height: 40px;
+    line-height: 110px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.info-instruction p {
+    font-family: 'Cabin Sketch', serif;
+}
+
+.drop-down, .click-button, .show-map {
+    float: left;
+    margin: 15px;
+}
+
+.btn-align {
+    margin: 0 auto;
+    display: flex;
+}
+
+/* --- Website Content --- */
+.content-default {
+    margin: 20px 0 20px 0;
+}
+
+.intro {
+    margin-left: 20px;
+}
+
+.intro-title {
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+h4 {
+    margin-top: 20px;
+    font-weight: bold;    
+}
+
+.intro p {
+    font-size: medium;
+    text-align: left;
+    margin-top: 20px;
+}
+
+h6 {
+    margin-top: 50px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.intro a, .intro-email a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.intro a:hover, .intro-email a:hover {
+    color: #4169e1;
+}
+
+/* --- More Facts Modal --- */
+.more-modal-title-align {
+    margin-left: 0 auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
 }
 
 .more-modal-default {
@@ -105,72 +164,7 @@ ul {
     margin-left: 40px;
 }
 
-/* Font awesome styling */
-i {
-    color: #daa520;
-    margin-left: 20px;
-}
-
-.info-point {
-    cursor: pointer;
-}
-
-#countries {
-    float: right;
-}
-
-/* Content styling */
-.content-default {
-    margin: 20px 0 20px 0;
-}
-
-h4 {
-    margin-top: 20px;
-    font-weight: bold;    
-}
-
-h5 {
-    font-weight: bold;
-    color: 	#b22222;
-    margin: 15px 0 0 10px;
-}
-
-h6 {
-    margin-top: 50px;
-    font-size: smaller;
-    text-align: center;
-}
-
-.text-small {
-    font-size: xx-small;
-}
-
-.intro {
-    margin-left: 20px;
-}
-
-.intro-title {
-    text-align: center;
-    text-shadow: 1px 1px 2px #000000;
-}
-
-.intro p {
-    font-size: medium;
-    text-align: left;
-    margin-top: 20px;
-}
-
-.intro a, .intro-email a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #007bff;
-}
-
-.intro a:hover, .intro-email a:hover {
-    color: #4169e1;
-}
-
-/* Map section */
+/* --- Google Map & Details --- */
 #map {
     height: 600px;
     border: dashed 4px #1c1d26;
@@ -180,6 +174,21 @@ h6 {
 #siteInfo h2, #siteInfo b, #landInfo h2 {
     margin: 0;
     font-family: 'Cabin Sketch', serif;
+    font-weight: bold;
+}
+
+#siteInfo b {
+    font-size: medium;
+}
+
+#siteInfo p {
+    margin: 0;
+    font-family: 'Open Sans', serif;
+    font-size: small;
+}
+
+#siteInfo img {
+    border: 1px solid #000000;
 }
 
 #landInfo img {
@@ -191,25 +200,7 @@ h6 {
     float: right;
 }
 
-#siteInfo img {
-    border: 1px solid #000000;
-}
-
-#siteInfo p {
-    margin: 0;
-    font-family: 'Open Sans', serif;
-    font-size: small;
-}
-
-#siteInfo b {
-    font-size: medium;
-}
-
-h2, b {
-    font-weight: bold;
-}
-
-/* Footer styling */
+/* --- Footer --- */
 .footer-default {
     position: static;
     height: 4em;
@@ -224,13 +215,9 @@ h2, b {
     margin: 8px 0 0 5px;
 }
 
-/* ------------------------------------------------------ Media Queries */
+/* --- Media Queries --- */
 
 @media (min-width: 768px) and (max-width: 1024px) { 
-    #countries {
-        float: right;
-    }
-
     .content-default {
         height: 55rem;
     }
@@ -250,14 +237,12 @@ h2, b {
     .asia, .skeleton, .europe, .gold, .oceania, .conversation, .desert, .igloo {
         width: 30%;
         float: right;
-        line-height: 25px;
-        object-fit: contain; 
+        object-fit: contain;
     }
 
     .christian, .houses {
         width: 30%;
         float: left;
-        line-height: 30px;
         margin-right: 30px;
         object-fit: contain; 
     }
@@ -273,7 +258,7 @@ h2, b {
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
-    .info-point, #countries {
+    #countries, .info-point {
         margin: 0;
     }
 
@@ -281,8 +266,12 @@ h2, b {
         margin: 0;
         height: 75rem;
     }
-   
-   .info-modal-container p {
+
+   .modal-default {
+        margin-left: 0;
+    }
+
+   .info-instruction p {
         font-size: smaller;
     }
 

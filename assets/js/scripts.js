@@ -1,28 +1,38 @@
-// Display Information Modal
 $(document).ready(function () {
+    /* 
+     * Load Intro Modal
+     */
     $("#myCenterModal").modal('show');
+
+    /* 
+     * Set the initial latitude and longitude & events to Google map
+     */
     var latlng = new google.maps.LatLng(29.077615, 24.864881);
     var options = {
         zoom: 3,
         center: latlng,
         gestureHandling: 'cooperative',
-        disableDefaultUI: true, 
-        zoomControl: true, 
+        disableDefaultUI: true, // Disable all Google map control
+        zoomControl: true, // Enable zoom control
         zoomControlOptions: { 
-            position: google.maps.ControlPosition.TOP_LEFT
+            position: google.maps.ControlPosition.TOP_LEFT // Set zoom control on top left
         },
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
+    /* 
+     * Set the latitude and longitude, other controls and events,
+     * markers and info window when change value at the drop down
+     */
     $('#countries').change(function () {
         var op = document.getElementById("countries").getElementsByTagName("option");
-        op[0].disabled = true;
+        op[0].disabled = true; // Disable Index = 0 when value changed
 
         var coordinate = $('select option:selected').val().split(',');
         var selectedText = $('select option:selected').html();
-        var latlng = new google.maps.LatLng(coordinate[0], coordinate[1]);
+        var latlng = new google.maps.LatLng(coordinate[0], coordinate[1]); // Get the latitude & longitude from html
         var options = {
-            zoom: parseInt(coordinate[2]),
+            zoom: parseInt(coordinate[2]), // Get the zoom level from html
             center: latlng,
             gestureHandling: 'cooperative',
             disableDefaultUI: true, 
@@ -32,18 +42,21 @@ $(document).ready(function () {
             },
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var map = new google.maps.Map(document.getElementById('map'), options);
+        var map = new google.maps.Map(document.getElementById('map'), options); // Load the map with the change on drop down
 
         var markers = [];
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(coordinate[0], coordinate[1]),
+            position: new google.maps.LatLng(coordinate[0], coordinate[1]), // Create marker with the latitude & longitude from html
             title: selectedText,
             map: map
         });
         markers.push(marker);
 
+        /*
+         * Create info window with the given data
+         */
         var info = [
-            // Details for Country that start with "A"
+            // A
             ["Afghanistan", "There is no god but God; Muhammad is the messenger of God", "Kabul", "Pashto, Dari", "38,928,346", "652,860", "Afghani (AFN)", "UTC+4:30 Solar Calendar", "assets/img/flag/afghanistan.png"],
             ["Albania", "You Albania, give me honor, give me the name Albanian", "Tirana", "Albanian", "2,877,797", "27,400", "Lek (ALL)", "UTC+1 (CET)", "assets/img/flag/albania.png"],
             ["Algeria", "By the people and for the people", "Algiers", "Arabic, Berber", "43,851,044", "2,381,740", "Dinar (DZD)", "UTC+1 (CET)", "assets/img/flag/algeria.png"],
@@ -56,7 +69,7 @@ $(document).ready(function () {
             ["Austria", "No official motto", "Vienna", "German", "9,006,398", "82,409", "Euro (EUR)", "UTC+1 (CET)", "assets/img/flag/austria.png"],
             ["Azerbaijan", "The land of fire (Unofficial)", "Baku", "Azerbaijani", "10,139,177", "82,658", "Manat (AZN)", "AZT (UTC+04)", "assets/img/flag/azerbaijan.png"],
             
-            // Details for Country that start with "B"
+            // B
             ["Bahamas", "Forward, Upward, Onward, Together", "Nassau", "English", "393,244", "10,010", "Bahamian dollar (BSD)", "UTC−5 (EST)", "assets/img/flag/bahamas.png"],
             ["Bahrain", "No official motto", "Manama", "Arabic", "1,701,575", "760", "Bahraini dinar (BHD)", "UTC+3 (AST)", "assets/img/flag/bahrain.png"],
             ["Bangladesh", "No official motto", "Dhaka", "Bengali", "164,689,383", "130,170", "Bangladeshi taka (BDT)", "UTC+6 (BST)", "assets/img/flag/bangladesh.png"],
@@ -75,7 +88,7 @@ $(document).ready(function () {
             ["Burkina Faso", "Unity, Progress, Justice", "Ouagadougou", "French", "20,903,273", "273,600", "West African CFA franc (XOF)", "UTC (GMT)", "assets/img/flag/burkina-faso.png"],
             ["Burundi", "Unity, Work, Progress", "Bujumbura", "Kirundi", "11,890,784", "25,680", "Burundian franc (BIF)", "UTC+2 (CAT)", "assets/img/flag/burundi.png"],
             
-            // Details for Country that start with "C"
+            // C
             ["Cabo Verde", "Unity, Work, Progress", "Praia", "Portuguese", "555,987", "4,030", "Cape Verdean escudo (CVE)", "UTC-1 (CVT)", "assets/img/flag/cabo-verde.png"],
             ["Cambodia", "Nation, Religion, King", "Phnom Penh", "Khmer", "16,718,965", "176,520", "Riel (KHR)", "UTC+7 (ICT)", "assets/img/flag/cambodia.png"],
             ["Cameroon", "Peace, Work, Fatherland", "Yaoundé", "English, French", "26,545,863", "472,710", "Central African CFA franc (XAF)", "UTC+1 (WAT)", "assets/img/flag/cameroon.png"],
@@ -94,14 +107,14 @@ $(document).ready(function () {
             ["Cyprus", "No official motto", "Nicosia", "Greek, Turkish", "1,207,359", "9,240", "Euro (EUR)", "UTC+2 (EET)", "assets/img/flag/cyprus.png"],
             ["Czech Republic (Czechia)", "Truth prevails", "Prague", "Czech", "10,708,981", "77,240", "Czech koruna (CZK)", "UTC+1 (CET)", "assets/img/flag/czech-republic.png"],
 
-            // Details for Country that start with "D"
+            // D
             ["Denmark", "God, King and Fatherland", "Copenhagen", "Danish", "5,792,202", "42,430", "Danish krone (DKK)", "UTC+1 (CET)", "assets/img/flag/denmark.png"],
             ["Djibouti", "Unity, Equality, Peace", "Djibouti", "Arabic, French", "988,000", "23,180", "Djiboutian franc (DJF)", "UTC+3 (EAT)", "assets/img/flag/djibouti.png"],
             ["Dominica", "After God, the earth", "Roseau", "English", "71,986", "750", "East Caribbean dollar (XCD)", "UTC–4 (Eastern Caribbean)", "assets/img/flag/dominica.png"],
             ["Dominican Republic", "God, Fatherland, Liberty", "Santo Domingo", "Spanish", "10,847,910", "48,320", "Peso (DOP)", "UTC-4:00 (Standard Time Caribbean)", "assets/img/flag/dominican-republic.png"],
             ["DR Congo", "Justice, Peace, Work", "Kinshasa", "French", "89,561,403", "2,267,050", "Congolese franc (CDF)", "UTC+1 to +2 (WAT and CAT)", "assets/img/flag/dr-congo.png"],
 
-            // Details for Country that start with "E"
+            // E
             ["Ecuador", "God, Homeland, and Freedom", "Quito", "Spanish", "17,643,054", "248,360", "United States dollar (USD)", "UTC−5 / −6 (ECT / GALT)", "assets/img/flag/ecuador.png"],
             ["Egypt", "No official motto", "Cairo", "Arabic", "102,334,404", "995,450", "Egyptian pound (EGP)", "UTC+2 (EET)", "assets/img/flag/egypt.png"],
             ["El Salvador", "God, Union, Liberty", "San Salvador", "Spanish", "6,486,205", "20,720", "United States dollar (USD)", "UTC−6 (CST)", "assets/img/flag/el-salvador.png"],
@@ -111,12 +124,12 @@ $(document).ready(function () {
             ["Eswatini", "We are a fortress/We are a mystery/We hide ourselves away/We are powerful ones", "Mhahane, Lobamba", "Swazi, English", "1,160,164", "17,200", "Swazi lilangeni (SZL), South African rand (ZAR)", "UTC+2 (SAST)", "assets/img/flag/eswatini.png"],
             ["Ethiopia", "No official motto", "Addis Ababa (Finfinne)", "Amharic", "114,963,588", "1,000,000", "Birr (ETB)", "UTC+3 (EAT)", "assets/img/flag/ethiopia.png"],
 
-            // Details for Country that start with "F"
+            // F
             ["Fiji", "Fear God and honour the Queen", "Suva", "iTaukei, English, Fiji Hindi", "896,445", "18,270", "Fijian dollar (FJD)", "UTC+12 (FJT)", "assets/img/flag/fiji.png"],
             ["Finland", "No official motto", "Helsinki", "Finnish, Swedish", "5,540,720", "303,890", "Euro (EUR)", "UTC+2 (EET)", "assets/img/flag/finland.png"],
             ["France", "Liberty, Equality, Fraternity", "Paris", "French", "65,273,511", "547,557", "Euro (EUR), CFP franc (XPF)", "UTC+1 (Central European Time)", "assets/img/flag/france.png"],
 
-            // Details for Country that start with "G"
+            // G
             ["Gabon", "Union, Travail, Justice", "Libreville", "French", "2,225,734", "257,670", "Central African CFA franc (XAF)", "UTC+1 (WAT)", "assets/img/flag/gabon.png"],
             ["Gambia", "Progress, Peace, Prosperity", "Banjul", "English", "2,416,668", "10,120", "Dalasi (GMD)", "UTC (GMT)", "assets/img/flag/gambia.png"],
             ["Georgia", "Strength is in unity", "Tbilisi", "Georgian (nationwide), Abkhazian (Abkhazian AR)", "3,989,167", "69,490", "Georgian lari (GEL)", "UTC+4 (GET)", "assets/img/flag/georgia.png"],
@@ -129,13 +142,13 @@ $(document).ready(function () {
             ["Guinea-Bissau", "Unity, Struggle, Progress", "Bissau", "Portuguese", "1,968,001", "28,120", "West African CFA franc (XOF)", "UTC (GMT)", "assets/img/flag/guinea-bissau.png"],
             ["Guyana", "One people, one nation, one destiny", "Georgetown", "English", "786,552", "196,850", "Guyanese dollar (GYD)", "UTC-4 (AST)", "assets/img/flag/guyana.png"],
 
-            // Details for Country that start with "H"
+            // H
             ["Haiti", "Liberty, Equality, Fraternity", "Port-au-Prince", "French, Haitian Creole", "11,402,528", "27,560", "Haitian gourde (HTG)", "UTC−5 (EST)", "assets/img/flag/haiti.png"],
             ["Holy See", "No official motto", "Vatican City (de facto)", "Latin", "801", "0", "Euro (EUR)", "GMT+1", "assets/img/flag/holy-see.png"],
             ["Honduras", "Free, Sovereign and Independent", "Tegucigalpa", "Spanish", "9,904,607", "111,890", "Lempira (HNL)", "UTC−6 (CST)", "assets/img/flag/honduras.png"],
             ["Hungary", "With the help of God for Homeland and Freedom", "Budapest", "Hungarian", "9,660,351", "90,530", "Forint (HUF)", "UTC+1 (CET)", "assets/img/flag/hungary.png"],
 
-            // Details for Country that start with "I"
+            // I
             ["Iceland", " No official motto", "Reykjavík", "Icelandic", "341,243", "100,250", "Icelandic króna (ISK)", "UTC (GMT/WET)", "assets/img/flag/iceland.png"],
             ["India", "Truth alone triumphs", "New Delhi", "Hindi, English", "1,380,004,385", "2,973,190", "Indian rupee (INR)", "UTC+05:30 (IST)", "assets/img/flag/india.png"],
             ["Indonesia", "Unity in diversity", "Jakarta", "Indonesian", "273,523,615", "1,811,570", "Indonesian rupiah (IDR)", "UTC+7 to +9 (Various)", "assets/img/flag/indonesia.png"],
@@ -145,19 +158,19 @@ $(document).ready(function () {
             ["Israel", "No official motto", "Jerusalem", "Hebrew", "8,655,535", "21,640", "New shekel (ILS)", "UTC+2 (IST)", "assets/img/flag/israel.png"],
             ["Italy", "No official motto", "Rome", "Italian", "60,461,826", "294,140", "Euro (EUR)", "UTC+1 (CET)", "assets/img/flag/italy.png"],
 
-            // Details for Country that start with "J"
+            // J
             ["Jamaica", "Out of many, one people", "Kingston", "English", "2,961,167", "10,830", "Jamaican dollar (JMD)", "UTC-5", "assets/img/flag/jamaica.png"],
             ["Japan", "No official motto", "Tokyo", "(National Language: Japanese)", "126,476,461", "364,555", "Japanese yen (JPY)", "UTC+09:00 (JST)", "assets/img/flag/japan.png"],
             ["Jordan", "God, Homeland, King", "Amman", "Arabic", "10,203,134", "88,780", "Jordanian dinar (JOD)", "UTC+2 (EET)", "assets/img/flag/jordan.png"],
 
-            // Details for Country that start with "K"
+            // K
             ["Kazakhstan", "No official motto", "Nur-Sultan", "Kazakh (official state language), Russian (co-official)", "18,776,707", "2,699,700", "Tenge (KZT)", "UTC+5 / +6 (West / East)", "assets/img/flag/kazakhstan.png"],
             ["Kenya", "All pull together", "Nairobi", "English, Swahili", "53,771,296", "569,140", "Kenyan shilling (KES)", "UTC+3 (EAT)", "assets/img/flag/kenya.png"],
             ["Kiribati", "Health, Peace and Prosperity", "Tarawa", "English, Gilbertese", "119,449", "810", "Kiribati dollar, Australian dollar (AUD)", "UTC+12, +13, +14", "assets/img/flag/kiribati.png"],
             ["Kuwait", "No official motto", "Kuwait City", "Arabic", "4,270,571", "17,820", "Kuwaiti dinar (KWD)", "UTC+3 (AST)", "assets/img/flag/kuwait.png"],
             ["Kyrgyzstan", "No official motto", "Bishkek", "Kyrgyz (official state language), Russian (co-official)", "6,524,195", "191,800", "Som (KGS)", "UTC+6 (KGT)", "assets/img/flag/kyrgyzstan.png"],
 
-            // Details for Country that start with "L"
+            // L
             ["Laos", "Peace, Independence, Democracy, Unity and Prosperity", "Vientiane", "Lao", "7,275,560", "230,800", "Kip (LAK)", "UTC+7 (ICT)", "assets/img/flag/laos.png"],
             ["Latvia", "For Fatherland and Freedom", "Riga", "Latvian", "1,886,198", "62,200", "Euro (EUR)", "UTC+2 (EET)", "assets/img/flag/latvia.png"],
             ["Lebanon", "We are all for the Country, the Sublime and the Flag", "Beirut", "Arabic", "6,825,445", "10,230", "Lebanese pound (LBP)", "UTC+2 (EET)", "assets/img/flag/lebanon.png"],
@@ -168,7 +181,7 @@ $(document).ready(function () {
             ["Lithuania", "Freedom, Unity, Prosperity", "Vilnius", "Lithuanian", "2,722,289", "62,674", "Euro (EUR)", "UTC+2 (EET)", "assets/img/flag/lithuania.png"],
             ["Luxembourg", "We wish to remain what we are", "Luxembourg City", "Luxembourgish, French, German", "625,978", "2,590", "Euro (EUR)", "UTC+1 (CET)", "assets/img/flag/luxembourg.png"],
 
-            // Details for Country that start with "M"
+            // M
             ["Madagascar", "Love, Ancestral-land, Progress", "Antananarivo", "Malagasy, French", "27,691,018", "581,795", "Malagasy ariary (MGA)", "UTC+3 (EAT)", "assets/img/flag/madagascar.png"],
             ["Malawi", "Unity and Freedom", "Lilongwe", "English, Chichewa", "19,129,952", "94,280", "Kwacha (MWK)", "UTC+2 (CAT)", "assets/img/flag/malawi.png"],
             ["Malaysia", "Unity is Strength", "Kuala Lumpur, Putrajaya (administrative)", "Malay", "32,365,999", "328,550", "Ringgit (MYR)", "UTC+8 (MST)", "assets/img/flag/malaysia.png"],
@@ -188,7 +201,7 @@ $(document).ready(function () {
             ["Mozambique", "Republic of Mozambique", "Maputo", "Portuguese", "31,255,435", "786,380", "Mozambican metical (MZN)", "UTC+2 (CAT)", "assets/img/flag/mozambique.png"],
             ["Myanmar", "No official motto", "Naypyidaw (Nay Pyi Taw)", "Burmese", "54,409,800", "653,290", "Kyat (MMK)", "UTC+06:30 (MMT)", "assets/img/flag/myanmar.png"],
 
-            // Details for Country that start with "N"
+            // N
             ["Namibia", "Unity, Liberty, Justice", "Windhoek", "English", "2,540,905", "823,290", "Namibian dollar (NAD), South African rand (ZAR)", "UTC+2 (CAST)", "assets/img/flag/namibia.png"],
             ["Nauru", "God's will first", "None", "Nauruan, English", "10,824", "20", "Australian dollar (AUD)", "UTC+12", "assets/img/flag/nauru.png"],
             ["Nepal", "Mother and motherland are greater than heaven", "Kathmandu", "Nepali", "29,136,808", "143,350", "Nepalese rupee Rs (NPR)", "UTC+05:45 (Nepal Standard Time)", "assets/img/flag/nepal.png"],
@@ -201,10 +214,10 @@ $(document).ready(function () {
             ["North Macedonia", "No official motto", "Skopje", "Macedonian, Albanian", "2,083,374", "25,220", "Macedonian denar (MKD)", "UTC+1 (CET)", "assets/img/flag/north-macedonia.png"],
             ["Norway", "No official motto", "Oslo", "Norwegian, Sámi", "5,421,241", "365,268", "Norwegian krone (NOK)", "UTC+1 (CET)", "assets/img/flag/norway.png"],
             
-            // Details for Country that start with "O"
+            // O
             ["Oman", "No official motto", "Muscat", "Arabic", "5,106,626", "309,500", "Rial (OMR)", "UTC+4 (GST)", "assets/img/flag/oman.png"],
 
-            // Details for Country that start with "P"
+            // P
             ["Pakistan", "Faith, Unity, Discipline", "Islamabad", "English, Urdu", "220,892,340", "770,880", "Pakistani rupee (PKR)", "UTC+5 (PST)", "assets/img/flag/pakistan.png"],
             ["Palau", "Republic of Palau", "Ngerulmud", "English, Palauan, Japanese, Sonsorolese, Tobian", "18,094", "460", "United States dollar (USD)", "UTC+9", "assets/img/flag/palau.png"],
             ["Panama", "For the benefit of the world", "Panama City", "Spanish", "4,314,767", "74,340", "Balboa (PAB), United States dollar (USD)", "UTC−5 (EST)", "assets/img/flag/panama.png"],
@@ -215,15 +228,15 @@ $(document).ready(function () {
             ["Poland", "No official motto", "Warsaw", "Polish", "37,846,611", "306,230", "Polish złoty (PLN)", "UTC+1 (CET)", "assets/img/flag/poland.png"],
             ["Portugal", "No official motto", "Lisbon", "Portuguese", "10,196,709", "91,590", "Euro (EUR)", "UTC (WET), UTC-1 (Atlantic/Azores)", "assets/img/flag/portugal.png"],
             
-            // Details for Country that start with "Q"
+            // Q
             ["Qatar", "No official motto", "Doha", "Arabic", "2,881,053", "11,610", "Riyal (QAR)", "UTC+3 (AST)", "assets/img/flag/qatar.png"],
 
-            // Details for Country that start with "R"
+            // R
             ["Romania", "No official motto", "Bucharest", "Romanian", "19,237,691", "230,170", "Romanian leu (RON)", "UTC+2 (EET)", "assets/img/flag/romania.png"],
             ["Russia", "No official motto", "Moscow", "Russian", "145,934,462", "16,376,870", "Russian ruble (RUB)", "UTC+2 to +12", "assets/img/flag/russia.png"],
             ["Rwanda", "Unity, Work, Patriotism", "Kigali", "English, French, Kinyarwanda, Swahili", "12,952,218", "24,670", "Rwandan franc (RWF)", "UTC+2 (CAT)", "assets/img/flag/rwanda.png"],
 
-            // Details for Country that start with "S"
+            // S
             ["Saint Kitts and Nevis", "Country above self", "Basseterre", "English", "53,199", "260", "East Caribbean dollar (XCD)", "UTC-4", "assets/img/flag/saint-kitts-and-nevis.png"],
             ["Saint Lucia", "The Land, The People, The Light", "Castries", "English", "183,627", "610", "East Caribbean dollar (XCD)", "UTC−4", "assets/img/flag/saint-lucia.png"],
             ["Samoa", "God be the Foundation of Samoa", "Apia", "English, Samoan", "198,414", "2,830", "Tālā (WST)", "UTC+13 (WST)", "assets/img/flag/samoa.png"],
@@ -252,7 +265,7 @@ $(document).ready(function () {
             ["Switzerland", "One for all, all for one", "None (de jure), Bern (de facto)", "German, French, Italian, Romansh", "8,654,622", "39,516", "Swiss franc (CHF)", "UTC+1 (CET)", "assets/img/flag/switzerland.png"],
             ["Syria", "Unity, Freedom, Socialism", "Damascus", "Arabic", "17,500,658", "183,630", "Syrian Pound (SYP)", "UTC+2 (EET)", "assets/img/flag/syria.png"],
 
-            // Details for Country that start with "T"
+            // T
             ["Tajikistan", "No official motto", "Dushanbe", "Tajik", "9,537,645", "139,960", "Somoni (TJS)", "UTC+5 (TJT)", "assets/img/flag/tajikistan.png"],
             ["Tanzania", "Freedom and unity", "Dodoma (de jure)", "Swahili, English, Arabic (Zanzibar)", "59,734,218", "885,800", "Tanzanian Shilling (TZS)", "UTC+3 (EAT)", "assets/img/flag/tanzania.png"],
             ["Thailand", "No official motto", "Bangkok", "Thai", "69,799,978", "510,890", "Baht (THB)", "UTC+7 (ICT)", "assets/img/flag/thailand.png"],
@@ -265,7 +278,7 @@ $(document).ready(function () {
             ["Turkmenistan", "No official motto", "Ashgabat", "Turkmen", "6,031,200", "469,930", "Turkmen new manat (TMT)", "UTC+05 (TMT)", "assets/img/flag/turkmenistan.png"],
             ["Tuvalu", "Tuvalu for the Almighty", "Funafuti", "English, Tuvaluan", "11,792", "30", "Tuvaluan dollar, Australian dollar (AUD)", "UTC+12", "assets/img/flag/tuvalu.png"],
 
-            // Details for Country that start with "U"
+            // U
             ["Uganda", "For God and My Country", "Kampala", "English, Swahili", "45,741,007", "199,810", "Ugandan Shilling (UGX)", "UTC+3 (EAT)", "assets/img/flag/uganda.png"],
             ["Ukraine", "Liberty, Concord, Goodness", "Kiev", "Ukrainian", "43,733,762", "579,320", "Ukrainian hryvnia (UAH)", "UTC+2 (EET)", "assets/img/flag/ukraine.png"],
             ["United Arab Emirates", "God, Nation, President", "Abu Dhabi", "Arabic", "9,890,402", "83,600", "UAE dirham (AED)", "UTC+4 (GST)", "assets/img/flag/united-arab-emirates.png"],
@@ -274,27 +287,29 @@ $(document).ready(function () {
             ["Uruguay", "Liberty or death", "Montevideo", "Spanish", "3,473,730", "175,020", "Uruguayan peso (UYU)", "UTC-3 (UYT)", "assets/img/flag/uruguay.png"],
             ["Uzbekistan", "The Strength is in the Justice", "Tashkent", "Uzbek", "33,469,203", "425,400", "Uzbek som (UZS)", "UTC+5 (UZT)", "assets/img/flag/uzbekistan.png"],
 
-            // Details for Country that start with "V"
+            // V
             ["Vanuatu", "In God we stand", "Port Vila", "Bislama, English, French", "307,145", "12,190", "Vanuatu vatu (VUV)", "UTC+11 (VUT (Vanuatu Time))", "assets/img/flag/vanuatu.png"],
             ["Venezuela", "God and federation", "Caracas", "Spanish", "28,435,940", "882,050", "Petro, Bolivar Soberano (VES)", "UTC-4 (VET)", "assets/img/flag/venezuela.png"],
             ["Vietnam", "Independence, Freedom and Happiness", "Hanoi", "Vietnamese", "97,338,579", "310,070", "đồng (VND)", "UTC+07:00 (Vietnam Standard Time)", "assets/img/flag/vietnam.png"],
             
-            // Details for Country that start with "Y"
+            // Y
             ["Yemen", "God, Homeland, Revolution, Unity", "Sana'a (de jure), Aden (provisional)", "Arabic", "29,825,964", "527,970", "Yemeni rial (YER)", "UTC+3 (AST)", "assets/img/flag/yemen.png"],
             
-            // Details for Country that start with "Z"
+            // Z
             ["Zambia", "One Zambia, one Nation", "Lusaka", "English", "18,383,955", "743,390", "Zambian kwacha (ZMW)", "UTC+2 (CAT)", "assets/img/flag/zambia.png"],
             ["Zimbabwe", "Unity, Freedom, Work", "Harare", "16 languages: Chewa, Chibarwe, English, Kalanga, Koisan, Nambya, Ndau, Ndebele, Shangani, Shona, Sign Language, Sotho, Tonga, Tswana, Venda, Xhosa", "14,862,924", "386,850", "Zimbabwean dollar (current)", "UTC+2 (CAT)", "assets/img/flag/zimbabwe.png"]
 
         ];
 
+        /*
+         * Loop the data to display on map
+         */
         for (i = 0; i < info.length; i++) {
             if (info[i][0] == selectedText) {
-                var contentString = '<div id="content">' +
-                    '<div id="siteInfo">' +
+                var contentString = '<div id="siteInfo">' +
                     '<h2>' + info[i][0] + '</h2>' + '<hr>' +
                     '<img src="' + info[i][8] + '"alt="flag">' +
-                    '<div id="bodyContent">' +
+                    '<br>' +
                     '<br><p><b>Motto: </b>' + info[i][1] + '</p>' +
                     '<p><b>Capital: </b>' + info[i][2] + '</p>' +
                     '<p><b>Official Language: </b>' + info[i][3] + '</p>' +
@@ -302,37 +317,43 @@ $(document).ready(function () {
                     '<p><b>Area (km²): </b>' + info[i][5] + '</p>' +
                     '<p><b>Currency: </b>' + info[i][6] + '</p>' +
                     '<p><b>Time Zone: </b>' + info[i][7] + '</p>' +
-                    '</div>' +
                     '</div>';
 
                 var infowindow = new google.maps.InfoWindow({
-                    content: contentString
+                    content: contentString // Content of info window
                 });
 
                 google.maps.event.addListener(marker, 'click', function () {
-                    infowindow.open(map, marker);
+                    infowindow.open(map, marker); // Open info Window when click on marker
                 });
 
                 google.maps.event.addListener(map, 'click', function () {
-                    infowindow.close();
+                    infowindow.close(); // Close info Window when click on map
                 });
             }
         }
     });
 
-    // Reset Dropdown selected Index to 0
+    /*
+     * Reset the dropdown selection
+     */
     function reset() {
         var dropDown = document.getElementById("countries");
-        dropDown.selectedIndex = 0;
-        dropDown[0].disabled = false;
+        dropDown.selectedIndex = 0; // Back to Index = 0
+        dropDown[0].disabled = false; // Enable selection on Index = 0
     }
 
+    /*
+     * Load the Landmark markers using function when button clicked
+     */
     function myMarkerFunction() {
-        reset();
-        var map = new google.maps.Map(document.getElementById('map'), options);
-        // Add information window
-        var landInfowindow = new google.maps.InfoWindow();
+        reset(); // Reset the map
+        var map = new google.maps.Map(document.getElementById('map'), options); // Load the map to initial latitude & longitude        
+        var landInfowindow = new google.maps.InfoWindow(); // Add info window when click on marker
 
+        /*
+         * Create markers with the given data
+         */
         var landMarkers = [
             ["48.858372", "2.294481", "Eiffel Tower", "assets/img/landmark/001-eiffel-tower.png", 
             "This metal tower with three floors stands in the city center of Paris. It was built for the 1889 World Fair (Universal Expo) to celebrate the 100th anniversary of the French Revolution.", 
@@ -366,6 +387,9 @@ $(document).ready(function () {
             "As the site is build on a mountain ridge and thus always would be in danger of sliding down the slope during rainy season, over 600 terraces and a well laid-out drainage system were built around the city.", "assets/img/info/machu-picchu.jpg"]
         ];
         
+        /*
+         * Loop the data to display when the marker clicked
+         */
         for (i=0; i <landMarkers.length; i++) {
             var position = new google.maps.LatLng(landMarkers[i][0], landMarkers[i][1]);
             var title = landMarkers[i][2];
@@ -383,7 +407,7 @@ $(document).ready(function () {
             });
 
             google.maps.event.addListener(marker, 'click', function () {
-                landInfowindow.setContent(landContent);
+                landInfowindow.setContent(landContent); // Content of info window to each landmark 
                 landInfowindow.open(map, marker);
             });
 
@@ -393,8 +417,10 @@ $(document).ready(function () {
         }
     }
 
+    /*
+     * Call marker function when button is clicked
+     */
     document.getElementById("land-button").addEventListener("click", myMarkerFunction);
 
-    // initializing the map
-    var map = new google.maps.Map(document.getElementById('map'), options);
+    var map = new google.maps.Map(document.getElementById('map'), options); // Load the map
 });
