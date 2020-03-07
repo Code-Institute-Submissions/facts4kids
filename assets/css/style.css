@@ -236,6 +236,25 @@ h2, b {
         height: 250px;
     }
 
+    .more-modal-default p, .more-modal-default li {
+        font-size: medium;
+    }
+
+    .asia, .skeleton, .europe, .gold, .oceania, .conversation, .desert, .igloo {
+        width: 30%;
+        float: right;
+        line-height: 25px;
+        object-fit: contain; 
+    }
+
+    .christian, .houses {
+        width: 30%;
+        float: left;
+        line-height: 30px;
+        margin-right: 30px;
+        object-fit: contain; 
+    }
+
     #map {
         height: 700px;
         margin: 10px 0 0 10px;
@@ -262,6 +281,10 @@ h2, b {
 
     .more-modal-default {
         margin: 0;
+    }
+
+    .more-modal-default p, .more-modal-default li {
+        font-size: small;
     }
 
     .more-modal-default img {
