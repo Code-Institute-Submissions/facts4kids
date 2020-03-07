@@ -80,12 +80,22 @@ h1 {
     margin: 0 20px 20px 20px;
 }
 
-.more-modal-default img {
+.more-modal-default .continents {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     display: block;
     margin: 0 auto;
+}
+
+.asia, .skeleton, .christian, .europe, .houses, .gold {
+    float: right;
+    margin: 15px 15px 20px 30px;
+}
+
+.oceania, .conversation, .desert, .igloo {
+    float: left;
+    margin: 15px 30px 15px 30px;
 }
 
 ul {
