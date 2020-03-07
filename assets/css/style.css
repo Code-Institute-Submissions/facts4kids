@@ -48,6 +48,9 @@ h1 {
 
 .info-modal-container p {
     line-height: 110px;
+    font-family: 'Cabin Sketch', serif;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .drop-down, .click-button, .show-map {
@@ -276,7 +279,7 @@ h2, b {
     }
    
    .info-modal-container p {
-        font-size: small;
+        font-size: smaller;
     }
 
     .more-modal-default {
