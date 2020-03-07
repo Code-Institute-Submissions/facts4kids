@@ -33,8 +33,26 @@ h1 {
     padding: 10px 10px 10px 10px;
 }
 
-.modal-default img {
+.globe {
     float: right;
+    margin: 15px;
+}
+
+.modal-default p {
+    margin-left: 20px;
+    align: right;
+}
+
+.info-modal-container {
+    height: 50px;
+}
+
+.info-modal-container p {
+    line-height: 110px;
+}
+
+.drop-down, .click-button, .show-map {
+    float: left;
     margin: 15px;
 }
 
@@ -229,6 +247,10 @@ h2, b {
         height: 75rem;
     }
    
+   .info-modal-container p {
+        font-size: small;
+    }
+
     .more-modal-default {
         margin: 0;
     }
