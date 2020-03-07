@@ -40,11 +40,10 @@ h1 {
 
 .modal-default p {
     margin-left: 20px;
-    align: right;
 }
 
 .info-modal-container {
-    height: 50px;
+    height: 40px;
 }
 
 .info-modal-container p {
