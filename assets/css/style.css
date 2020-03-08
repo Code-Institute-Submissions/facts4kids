@@ -71,8 +71,8 @@ h5 {
 }
 
 .info-instruction {
-    height: 40px;
-    line-height: 110px;
+    height: 2.5em;
+    line-height: 6.875em;
     font-size: medium;
     font-weight: bold;
 }
@@ -167,7 +167,7 @@ ul {
 
 /* --- Google Map & Details --- */
 #map {
-    height: 600px;
+    height: 37.5em;
     margin-left: 50px;
     border: dashed 4px #1c1d26;    
 }
@@ -193,7 +193,7 @@ h2, #site-info b {
 }
 
 #land-content img {
-    height: 150px;
+    height: 9.375em;
     margin: 20px 0 0 10px;
     padding: 5px;
     border: 1px solid #ddd;
@@ -220,7 +220,7 @@ h2, #site-info b {
 
 @media (min-width: 768px) and (max-width: 1024px) { 
     .content-default {
-        height: 55rem;
+        height: 55em;
     }
 
     .intro p {
@@ -228,7 +228,7 @@ h2, #site-info b {
     }
 
     .more-modal-default img {
-        height: 250px;
+        height: 15.625em;
     }
 
     .more-modal-default p, .more-modal-default li {
@@ -249,8 +249,8 @@ h2, #site-info b {
     }
 
     #map {
-        margin: 10px 0 0 10px;
-        height: 700px;
+        height: 43.75em;
+        margin: 10px 0 0 10px;        
     }
 
     .footer-default i {
@@ -264,7 +264,7 @@ h2, #site-info b {
     }
 
     .content-default {
-        height: 75rem;
+        height: 75em;
         margin: 0;
     }
 
@@ -285,12 +285,12 @@ h2, #site-info b {
     }
 
     .more-modal-default img {
-        height: 150px;
+        height: 9.375em;
     }
     
     #map {
+        height: 31.25em;
         margin: 0;
-        height: 500px;
     }
 
     #land-content img {
