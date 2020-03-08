@@ -78,3 +78,50 @@ The wireframes for popup modals are same to either desktop, tablets or mobile.
 - Emailing by using Gmail JavaScript API need to be used to avoid 'mailto' not functioning in certain devices that without the Embeded Email settings.
 
 ## Technologies Used
+#### [Balsamiq](https://balsamiq.com/)
+- Balsamiq was used to design and create the wireframes of this project.
+
+#### [Gitpod Online IDE](https://www.gitpod.io/)
+- Gitpod Online IDE used to write the HTML5, CSS3 and JavaScript.
+
+#### [Bootstrap](https://getbootstrap.com/)
+- Bootstrap used for a responsive layout across various platform.
+
+#### [Google Font](https://fonts.google.com/)
+- Google Fonts imported to be the fonts in the site. They are:
+    - Love Ya Like A Sister - Used at logo, and the title of Modals.
+    - Merriweather - Used at the content of site.
+    - Cabin Sketch - Used at the title and subject to each InfoWindow.
+    - Open Sans - Used at the information in InfoWindow.
+
+#### [FontAwesome](https://fontawesome.com/)
+- Font Awesome used to provide the icons for Information and Github.
+
+#### [HTML5](https://en.wikipedia.org/wiki/HTML5) & [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3)
+- HTML5 used to create the layout of the site.
+- CSS3 used to style the layout of the site.
+
+#### [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- JavaScript used to set the primary function of the site for user interaction.
+
+#### [Google Maps Platform](https://cloud.google.com/maps-platform/?utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_367782070768-ADGP_Hybrid+%7C+AW+SEM+%7C+SKWS+~+Maps+%7C+BMM+%7C+Mapping+APIs-KWID_43700045945252475-aud-563211325864:kwd-341556980804-userloc_9050745&utm_term=KW_%2Bmapping%20%2Bapi-ST_%2Bmapping+%2Bapi&gclid=CjwKCAiAzJLzBRAZEiwAmZb0ahqv1nqfQPH4AxrmxuamyZEGElW4REdTFpCiSd7LWzhjRc85CXtN8BoCSXcQAvD_BwE)
+- Google customizable Maps API to create an interactive maps at site.
+
+#### [ResizeImage.net](https://resizeimage.net/)
+- ResizeImage used to resize the images for the site.
+
+#### [favicon.cc](https://www.favicon.cc/)
+- Favicon used to convert image to .ico format as the icon at the browser tab.
+
+#### [COUNTRYFLAGS.com](https://www.countryflags.com/en/)
+- COUNTRYFLAGS used to get the flag images for the site.
+
+#### [FLATICON](https://www.flaticon.com/)
+- FLATICON used to get the icon image in .png format for the site.
+
+#### [Git & GitHub](https://github.com/)
+- Git used for version control, and GitHub used as a remote repository and the hosting of the site.
+
+## Testing
+## Deployment
+## Credits
