@@ -1,6 +1,6 @@
 $(document).ready(function () {
     /* 
-     * Load Intro Modal
+     * Modal open when page load
      */
     $("#myCenterModal").modal("show");
 
@@ -362,8 +362,9 @@ $(document).ready(function () {
             "Machu Picchu which means 'Old Mountain' in the local Quechua language is a famous site in Peru. It is also referred to as 'The Lost City of the Incas'. The ruins of the Lost City are located in the mountains, at more than 2,400 meters/8,000 feet above sea level. This ruin site has more than 200 different buildings and structures. The ruins were never discovered by European conquistadors but only became known in 1911 when an American archeologist was led to the site by locals.", 
             "As the site is build on a mountain ridge and thus always would be in danger of sliding down the slope during rainy season, over 600 terraces and a well laid-out drainage system were built around the city.", "assets/img/info/machu-picchu.jpg"]
         ];
+
         /*
-         * Loop the data to display when the marker clicked
+         * Loop the data to display when the marker is clicked
          */
         for (var i=0; i <landMarkers.length; i++) {
             var position = new google.maps.LatLng(landMarkers[i][0], landMarkers[i][1]);
@@ -397,5 +398,8 @@ $(document).ready(function () {
      */
     document.getElementById("land-button").addEventListener("click", myMarkerFunction);
 
-    var map = new google.maps.Map(document.getElementById("map"), options); // Load the map
+    /*
+     * Load the map when the page load
+     */
+    var map = new google.maps.Map(document.getElementById("map"), options);
 });

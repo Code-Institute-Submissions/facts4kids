@@ -216,8 +216,7 @@ h2, #site-info b {
     float: right;
 }
 
-/* --- Media Queries --- */
-
+/* --- Media Queries - Tablet Size --- */
 @media (min-width: 768px) and (max-width: 1024px) { 
     .content-default {
         height: 55em;
@@ -258,6 +257,7 @@ h2, #site-info b {
     }
 }
 
+/* --- Media Queries - Mobile Size --- */
 @media (min-width: 360px) and (max-width: 767px) {
     #countries, .info-point {
         margin: 0;
