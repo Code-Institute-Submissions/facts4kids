@@ -5,10 +5,9 @@ This single page site project started with a thought of love to travel the world
 I decided to get the most updated country list in year 2020 from [WorldOMeter](https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/), as well as the population and the Land Area data to each of the country. This organization is run by an international team of developers, researchers, and volunteers with the goal of making world statistics available to a wide audience around the world. 
 
 As the site provided by WorldOMeter is more to statistics analysis, I have also gather the other useful data from:
-- [Countryflags.com](https://www.countryflags.com/en/image-overview/) - Specialized in Country flags, that offers visitors free information about all flags of the world.
+- [Kids-world-travel-guide.com](https://www.kids-world-travel-guide.com/) - This site owned and managed by Regina Graeff and a team of young writers, student travellers, curious explorers and students, that I have gathered the information of continents and landmarks from here.
 - [Wikipedia](https://en.wikipedia.org/) - Wikipedia is a multilingual, web-based, free-content encyclopedia project, that provides useful information, such as: Capital, official languages, currency and time zone to support the site.
 - [List of National Mottos](https://en.wikipedia.org/wiki/List_of_national_mottos) - Wikipedia provides state and national mottos for the world's nations.
-- [Kids-world-travel-guide.com](https://www.kids-world-travel-guide.com/) - This site owned and managed by Regina Graeff and a team of young writers, student travellers, curious explorers and students, that I have gathered the information of continents and landmarks from here.
 
 I wanted to make this site in more interactive with full of travel information. Thus, all the data and information from the site is not from the mapping of API, but from the sites that mentioned above. This is due to none of the site that I could mapping the API and give such a rich information that the young explorer might curious to. While Google Map is used to achieve the goal of this project.
 
@@ -119,9 +118,29 @@ The wireframes for popup modals are same to either desktop, tablets or mobile.
 #### [FLATICON](https://www.flaticon.com/)
 - FLATICON used to get the icon image in .png format for the site.
 
+#### [Pexels](https://www.pexels.com/)
+- Pexels used to get the landmark images for the site.
+
 #### [Git & GitHub](https://github.com/)
 - Git used for version control, and GitHub used as a remote repository and the hosting of the site.
 
 ## Testing
 ## Deployment
 ## Credits
+### Content
+- The site was designed and built in full by myself. All text was written with reference on [Kids-world-travel-guide.com](https://www.kids-world-travel-guide.com/).
+- The other source of data was from:
+    - WorldOMeter (https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/)
+    - List of National Mottos (https://en.wikipedia.org/wiki/List_of_national_mottos)
+    - Wikipedia Search Engine (https://en.wikipedia.org/wiki/Main_Page)
+
+### Media
+- The country flag images was sourced from [Countryflags.com](https://www.countryflags.com/en/image-overview/), that is a site specialized in Country flags, that offers visitors free information about all flags of the world.
+- The landmark images was sourced from [Pexels](https://www.pexels.com/), that is a site to provide free and high quality images.
+- The landmark icons and related images to the information at the site were sourced from [FLATICON](https://www.flaticon.com/).
+
+### Acknowledgements
+- Special thanks to [Dick Vlaanderen](https://github.com/dickvla), my mentor from Code Institute, for his valuable advice and guidance.
+- The Tutor Support at Code Institute, and thanks for the helpful feedback from Tim, Kevin and Cormac.
+- I get the idea of the site mainly from [kids-world-travel-guide](https://www.kids-world-travel-guide.com/) and [WorldOMeter](https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/), with the help from [Wikipedia](https://www.wikipedia.org/).
+- In the middle of the project, I refer to [w3schools.com](https://www.w3schools.com/), [stackoverflow](https://stackoverflow.com/) and [Maps JavaScript API Tutorial](https://developers.google.com/maps/documentation/javascript/tutorial?hl=en) especially when putting all the codes together.
