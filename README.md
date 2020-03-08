@@ -13,6 +13,8 @@ As the site provided by WorldOMeter is more to statistics analysis, I have also 
 
 I wanted to make this site in more interactive with full of travel information. Thus, all the data and information from the site is not from the mapping of API, but from the sites that mentioned above. This is due to none of the site that I could mapping the API and give such a rich information that the young explorer might curious to. While Google Map is used to achieve the goal of this project.
 
+The deployed website: **[Facts4Kids](https://kongteckmee.github.io/facts4kids/)**
+
 ## UX
 
 #### User Stories
