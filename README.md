@@ -17,13 +17,27 @@ The deployed website: **[Facts4Kids](https://kongteckmee.github.io/facts4kids/)*
 
 ## UX
 
-#### User Stories
+### User Stories
 
 - As a user, I want to be able to view data of all countries in one place, without the need of checking multiple tabs.
 - As a user, I want to be able to view the instructions when exploring the site.
 - As a user, I want to be able to view data on individual country, and get the information such as location, country name, motto, population, and so on.
 - As a user, I want to be able to view information on continents, famous landmarks and monuments in the world.
 - As a user, I want to be easily reset the data when swapping the action on drop down menu and button.
-- As a user, I want to be able to contact the developer if I have a query to the site.
+- As a user, I want to be able to contact the developer if I have queries to the site.
 
-#### Wireframes
+### Wireframes
+The wireframes were created at the beginning of the project. They are similar to the final site, yet do differ as more relevant images are added to support the information given to childeren throught the site.
+
+The wireframes for popup modals are same to either desktop, tablets or mobile.
+
+#### Desktop View
+![Desktop View](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/index-d.png)
+![Introduction Modal](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/information.png)
+![More Info Modal](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/interest_facts.png)
+
+#### Tablets View
+![Tablets View](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/index-t.png)
+
+#### Mobile View
+![Mobile View](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/index-m.png)
