@@ -127,13 +127,15 @@ The wireframes for popup modals are same to either desktop, tablets or mobile.
 ## Testing
 
 ## Deployment
-The site was developed using Gitpod Online IDE and Git was used for version control which is when pushed to GitHub. The site is hosted on GitHub pages and deployed from the master branch on GitHub. There is no difference between the development version of this site and the deployed version on GitHub pages.
+The site was developed using Gitpod Online IDE and Git was used for version control which is when pushed to GitHub. The site is hosted on GitHub pages and deployed from the master branch on GitHub.
 
 In order to deploy this project, the following steps are taken:
 1. From GitHub page, I clicked on "Repositories" and selected "facts4kids", which is the name of repository for this project.
 2. Then I clicked the "Settings" that located on top-right of the menu bar.
 3. I scolled down the page to GitHub Pages section. At the dropdown menu under "Source", I selected "master branch".
 4. All the steps resulted a complete deployed version site and the project published on GitHub pages at: https://kongteckmee.github.io/facts4kids/.
+
+There is no difference between the development version of this site and the deployed version on GitHub pages.
 
 ## Credits
 ### Content
