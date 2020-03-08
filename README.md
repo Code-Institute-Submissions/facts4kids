@@ -139,8 +139,8 @@ There is no difference between the development version of this site and the depl
 
 ## Credits
 ### Content
-- The site was designed and built in full by myself. All text was written with reference on [Kids-world-travel-guide.com](https://www.kids-world-travel-guide.com/).
-- The other source of data was from:
+- The site was designed and completed by myself. All text was written with reference on [Kids-world-travel-guide.com](https://www.kids-world-travel-guide.com/).
+- The other source of data were from:
     - WorldOMeter (https://www.worldometers.info/geography/how-many-countries-are-there-in-the-world/)
     - List of National Mottos (https://en.wikipedia.org/wiki/List_of_national_mottos)
     - Wikipedia Search Engine (https://en.wikipedia.org/wiki/Main_Page)
