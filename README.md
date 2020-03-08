@@ -135,9 +135,12 @@ Browser on Chrome, Firefox and IE are used to test the browser compatibility. Th
 
 Chrome DevTools were used to test the responsiveness of the site on Galaxy S5, iPhone 6/7/8, iPad Mini and Laptop. There is no issue encountered.
 
-The site also been tested by walking through each user story. The users are able to do everything that they want to do.
+The site also been tested by walking through each user story. The users are able to do everything that they wanted to do.
 
-#### Known Issues
+### Known Issues
+- The site designed only for portrait view. Tested devices that changed to landscape view will have different layout either to the icon, images or the margin of the map.
+- The Google Map is not rendering in IE browser at certain time. This is the issue that I could not fix.
+- The Email link will lead to a blank page to certain computer that do not have a Mail settings.
 
 ## Deployment
 The site was developed using Gitpod Online IDE and Git was used for version control which is when pushed to GitHub. The site is hosted on GitHub pages and deployed from the master branch on GitHub.
