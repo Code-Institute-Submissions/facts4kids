@@ -32,12 +32,12 @@ The wireframes were created at the beginning of the project. They are similar to
 The wireframes for popup modals are same to either desktop, tablets or mobile.
 
 #### Desktop View
-![Desktop View](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/index-d.png)
-![Introduction Modal](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/information.png)
-![More Info Modal](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/interest_facts.png)
+<img src="assets/img/wireframe/index-d.png" align=top width=170>&nbsp;
+<img src="assets/img/wireframe/information.png" align=top width=170>&nbsp;
+<img src="assets/img/wireframe/interest_facts.png" align=top width=170>&nbsp;
 
 #### Tablets View
-![Tablets View](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/index-t.png)
+<img src="assets/img/wireframe/index-t.png" align=top width=170>&nbsp;
 
 #### Mobile View
-![Mobile View](https://kongteckmee.github.io/facts4kids/assets/img/wireframe/index-m.png)
+<img src="assets/img/wireframe/index-m.png" align=top width=170>&nbsp;
