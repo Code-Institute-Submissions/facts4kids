@@ -172,27 +172,27 @@ ul {
     border: dashed 4px #1c1d26;    
 }
 
-#siteInfo h2, #siteInfo b, #landInfo h2 {
+h2, #site-info b {
     margin: 0;
     font-family: 'Cabin Sketch', serif;
     font-weight: bold;
 }
 
-#siteInfo b {
+#site-title img {
+    border: 1px solid #000000;
+}
+
+#site-info b {
     font-size: medium;
 }
 
-#siteInfo p {
+#site-info p {
     margin: 0;
     font-family: 'Open Sans', serif;
     font-size: small;
 }
 
-#siteInfo img {
-    border: 1px solid #000000;
-}
-
-#landInfo img {
+#land-content img {
     height: 150px;
     margin: 20px 0 0 10px;
     padding: 5px;
@@ -293,7 +293,7 @@ ul {
         height: 500px;
     }
 
-    #landInfo img {
+    #land-content img {
         display: none;
     }
 }
