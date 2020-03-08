@@ -17,17 +17,18 @@ body {
     background-color: #1c1d26;
 }
 
-.logo {
-    color: #daa520;
-}
-
-h1 {
+.logo, .more-modal-title-align, .modal-title-align {
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
-i {
+.logo {
     color: #daa520;
+    font-size: 200%;
+}
+
+i {
     margin-left: 20px;
+    color: #daa520;    
 }
 
 .info-point {
@@ -40,9 +41,9 @@ i {
 
 /* --- Intro Modal --- */
 .modal-title-align {
-    margin-left: 0 auto;
-    text-align: center;
     padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 250%;
 }
 
 .cross-color {
@@ -59,14 +60,14 @@ i {
 }
 
 .globe {
-    float: right;
     margin: 15px;
+    float: right;    
 }
 
 h5 {
-    font-weight: bold;
-    color: 	#b22222;
     margin: 15px 0 0 10px;
+    color: 	#b22222;  
+    font-weight: bold;      
 }
 
 .info-instruction {
@@ -81,8 +82,8 @@ h5 {
 }
 
 .drop-down, .click-button, .show-map {
-    float: left;
     margin: 15px;
+    float: left;    
 }
 
 .btn-align {
@@ -110,9 +111,9 @@ h4 {
 }
 
 .intro p {
-    font-size: medium;
-    text-align: left;
     margin-top: 20px;
+    font-size: medium;
+    text-align: left;    
 }
 
 h6 {
@@ -133,9 +134,9 @@ h6 {
 
 /* --- More Facts Modal --- */
 .more-modal-title-align {
-    margin-left: 0 auto;
-    text-align: center;
     padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 250%;
 }
 
 .more-modal-default {
@@ -143,21 +144,21 @@ h6 {
 }
 
 .more-modal-default .continents {
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
-    display: block;
-    margin: 0 auto;
 }
 
 .asia, .skeleton, .christian, .europe, .houses, .gold {
-    float: right;
     margin: 15px 15px 20px 30px;
+    float: right;    
 }
 
 .oceania, .conversation, .desert, .igloo {
-    float: left;
     margin: 15px 30px 15px 30px;
+    float: left;    
 }
 
 ul {
@@ -167,8 +168,8 @@ ul {
 /* --- Google Map & Details --- */
 #map {
     height: 600px;
-    border: dashed 4px #1c1d26;
     margin-left: 50px;
+    border: dashed 4px #1c1d26;    
 }
 
 #siteInfo h2, #siteInfo b, #landInfo h2 {
@@ -193,26 +194,26 @@ ul {
 
 #landInfo img {
     height: 150px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
     margin: 20px 0 0 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;   
     float: right;
 }
 
 /* --- Footer --- */
 .footer-default {
-    position: static;
     height: 4em;
-    line-height: 4em;
-    background-color: #1c1d26;
+    line-height: 4em;    
+    position: static;
+    background-color: #1c1d26;   
     color: #daa520;
     font-size: smaller;
 }
 
 .footer-default i {
-    float: right;
     margin: 8px 0 0 5px;
+    float: right;
 }
 
 /* --- Media Queries --- */
@@ -242,14 +243,14 @@ ul {
 
     .christian, .houses {
         width: 30%;
-        float: left;
         margin-right: 30px;
+        float: left;
         object-fit: contain; 
     }
 
     #map {
-        height: 700px;
         margin: 10px 0 0 10px;
+        height: 700px;
     }
 
     .footer-default i {
@@ -263,8 +264,8 @@ ul {
     }
 
     .content-default {
-        margin: 0;
         height: 75rem;
+        margin: 0;
     }
 
    .modal-default {
@@ -288,8 +289,8 @@ ul {
     }
     
     #map {
-        height: 500px;
         margin: 0;
+        height: 500px;
     }
 
     #landInfo img {
