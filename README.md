@@ -32,7 +32,7 @@ The wireframes for popup modals are same to either desktop, tablets or mobile.
 <img src="wireframe/index-t.png" align=top width=160>&nbsp;
 <img src="wireframe/index-d.png" align=top width=160>&nbsp;
 <img src="wireframe/information.png" align=top width=160>&nbsp;
-<img src="wireframe/interest_facts.png" align=top width=160>&nbsp;
+<img src="wireframe/interest_facts.png" align=top width=160>
 
 ## Features
 ### Existing Features
@@ -125,6 +125,19 @@ The wireframes for popup modals are same to either desktop, tablets or mobile.
 - Git used for version control, and GitHub used as a remote repository and the hosting of the site.
 
 ## Testing
+The Site testing is done by using a test sheet created in Excel file. Various tests have been done to ensure the site renders properly across different screen size of devices. Throughout the test, the site rendering well and each functionalities behaves as intended.
+
+This is the [test sheet](testing/test-sheet.xlsx)
+
+<img src="testing/test-sheet.PNG" align=top width=750>
+
+Browser on Chrome, Firefox and IE are used to test the browser compatibility. The site displayed without any issue.
+
+Chrome DevTools were used to test the responsiveness of the site on Galaxy S5, iPhone 6/7/8, iPad Mini and Laptop. There is no issue encountered.
+
+The site also been tested by walking through each user story. The users are able to do everything that they want to do.
+
+#### Known Issues
 
 ## Deployment
 The site was developed using Gitpod Online IDE and Git was used for version control which is when pushed to GitHub. The site is hosted on GitHub pages and deployed from the master branch on GitHub.
