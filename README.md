@@ -31,9 +31,9 @@ The wireframes were created at the beginning of the project. They are similar to
 
 The wireframes for popup modals are same to either desktop, tablets or mobile.
 
-#### [Mobile View] [Tablets View] [Desktop View]
-<img src="assets/img/wireframe/index-m.png" align=top width=170>&nbsp;
-<img src="assets/img/wireframe/index-t.png" align=top width=170>&nbsp;
-<img src="assets/img/wireframe/index-d.png" align=top width=170>&nbsp;
-<img src="assets/img/wireframe/information.png" align=top width=170>&nbsp;
-<img src="assets/img/wireframe/interest_facts.png" align=top width=170>&nbsp;
+#### [Mobile View] [Tablets View] [Desktop View] [Introduction Modal] [More Information Modal]
+<img src="assets/img/wireframe/index-m.png" align=top width=150>&nbsp;
+<img src="assets/img/wireframe/index-t.png" align=top width=150>&nbsp;
+<img src="assets/img/wireframe/index-d.png" align=top width=150>&nbsp;
+<img src="assets/img/wireframe/information.png" align=top width=150>&nbsp;
+<img src="assets/img/wireframe/interest_facts.png" align=top width=150>&nbsp;
