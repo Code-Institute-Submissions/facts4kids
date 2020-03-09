@@ -274,7 +274,7 @@ h2, #site-info b {
 
     .content-default {
         height: 75em;
-        margin: 0;
+        margin-top: 50px;
     }
 
    .modal-default {
