@@ -59,9 +59,10 @@ i {
     margin-left: 20px;
 }
 
-.globe {
+.modal-default-intro img {
+    height: 100px;
     margin: 15px;
-    float: right;    
+    float: right;
 }
 
 h5 {
@@ -81,7 +82,8 @@ h5 {
     font-family: 'Cabin Sketch', serif;
 }
 
-.drop-down, .click-button, .show-map {
+.info-instruction img {
+    height: 80px;
     margin: 15px;
     float: left;    
 }
