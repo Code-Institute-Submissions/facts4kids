@@ -125,22 +125,25 @@ The wireframes for popup modals are same to either desktop, tablets or mobile.
 - Git used for version control, and GitHub used as a remote repository and the hosting of the site.
 
 ## Testing
-The Site testing is done by using a test sheet created in Excel file. Various tests have been done to ensure the site renders properly across different screen size of devices. Throughout the test, the site rendering well and each functionalities behaves as intended.
+The Site testing is done by using a test sheet created in Excel file. Various tests have been done to ensure the site renders properly across different screen size of devices. Throughout the test, the site rendering well at most of tested devices and each functionalities behaves as intended.
 
 This is the [test sheet](testing/test-sheet.xlsx)
 
 <img src="testing/test-sheet.PNG" align=top width=750>
 
-Browser on Chrome, Firefox and IE are used to test the browser compatibility. The site displayed without any issue.
+The Validators for HTML, CSS and JS are used, no error or warning found on HTML and CSS. Yet, there are two warnings and two undefined variables found at JS. One of the undefined variable is 'google' that is affecting the loading of Google Map at site. The rest of warnings and undefined variable is not affecting the site on user action.
 
-Chrome DevTools were used to test the responsiveness of the site on Galaxy S5, iPhone 6/7/8, iPad Mini and Laptop. There is no issue encountered.
+Browser on Chrome, Firefox and IE are used to test the browser compatibility. The site displayed without any issue, except IE that the Google Map sometimes couldn't loaded well in it.
+
+Chrome DevTools were used to test the responsiveness of the site on Galaxy S5, iPhone 6/7/8 and iPad Mini. There is no issue encountered.
 
 The site also been tested by walking through each user story. The users are able to do everything that they wanted to do.
 
 ### Known Issues
-- The site designed only for portrait view. Tested devices that changed to landscape view will have different layout either to the icon, images or the margin of the map.
-- The Google Map is not rendering in IE browser at certain time. This is the issue that I could not fix.
-- The Email link will lead to a blank page to certain computer that do not have a Mail settings.
+- The Google Map is not loaded properly in browser. This is the issue that I could not fix. This happened when:
+    - 'google' undefined variables issue found in console,
+    - Restriction done at the credentials of Google Maps API.
+- The Email link will lead to a blank page to certain computer that do not have a proper Mail settings.
 
 ## Deployment
 The site was developed using Gitpod Online IDE and Git was used for version control which is when pushed to GitHub. The site is hosted on GitHub pages and deployed from the master branch on GitHub.
