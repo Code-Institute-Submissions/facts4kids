@@ -149,12 +149,28 @@ The site also been tested by walking through each user story. The users are able
 The site was developed using Gitpod Online IDE and Git was used for version control which is when pushed to GitHub. The site is hosted on GitHub pages and deployed from the master branch on GitHub.
 
 In order to deploy this project, the following steps are taken:
-1. From GitHub page, I clicked on "Repositories" and selected "facts4kids", which is the name of repository for this project.
-2. Then I clicked the "Settings" that located on top-right of the menu bar.
-3. I scrolled down the page to GitHub Pages section. At the dropdown menu under "Source", I selected "master branch".
+1. On GitHub, I navigated to my site repository named "facts4kids", which is the name of repository for this project.
+2. Under the repository name, I clicked "Settings".
+3. Under "GitHub Pages", use the "Source" drop down menu and select a publishing source. I selected "master branch".
 4. All the steps resulted a complete deployed version site and the project published on GitHub pages at: https://kongteckmee.github.io/facts4kids/.
 
 There is no difference between the development version of this site and the deployed version on GitHub pages.
+
+In order to run the code locally, I cloned my repository to create a local copy on my computer. To do this:
+1. On GitHub, I navigated to the main page of repository named "facts4kids".
+2. Under the repository name, I clicked "Cloned or download".
+3. Under "Clone with HTTPS", I clicked "copy" to clone the respository using HTTPS.
+4. Open "Git Bash". I typed "git clone", and paste the URL that I copied in step 3: "$ git clone https://github.com/kongteckmee/facts4kids.git".
+5. I pressed "Enter". My local clone is created.
+
+"$ git clone https://github.com/kongteckmee/facts4kids <br>
+Cloning into 'facts4kids'...<br>
+remote: Enumerating objects: 55, done.<br>
+remote: Counting objects: 100% (55/55), done.<br>
+remote: Compressing objects: 100% (36/36), done.<br>
+remote: Total 914 (delta 22), reused 43 (delta 14), pack-reused 859<br>
+Receiving objects: 100% (914/914), 3.87 MiB | 473.00 KiB/s, done.<br>
+Resolving deltas: 100% (359/359), done."
 
 ## Credits
 ### Content
