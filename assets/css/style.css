@@ -153,6 +153,9 @@ h6 {
     border-radius: 4px;
 }
 
+.more-modal-default-image img {
+    height: 80px;
+}
 .asia, .skeleton, .christian, .europe, .houses, .gold {
     margin: 15px 15px 20px 30px;
     float: right;    
