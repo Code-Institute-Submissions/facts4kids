@@ -2,7 +2,7 @@ $(document).ready(function () {
     /* 
      * Modal open when page load
      */
-    // $("#myCenterModal").modal("show");
+    $("#myCenterModal").modal("show");
 
     /* 
      * Set the initial latitude and longitude & events to Google map
