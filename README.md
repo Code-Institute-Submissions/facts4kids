@@ -161,16 +161,15 @@ In order to run the code locally, I cloned my repository to create a local copy 
 2. Under the repository name, I clicked "Cloned or download".
 3. Under "Clone with HTTPS", I clicked "copy" to clone the respository using HTTPS.
 4. Open "Git Bash". I typed "git clone", and paste the URL that I copied in step 3: "$ git clone https://github.com/kongteckmee/facts4kids.git".
-5. I pressed "Enter". My local clone is created.
-
-"$ git clone https://github.com/kongteckmee/facts4kids <br>
-Cloning into 'facts4kids'...<br>
-remote: Enumerating objects: 55, done.<br>
-remote: Counting objects: 100% (55/55), done.<br>
-remote: Compressing objects: 100% (36/36), done.<br>
-remote: Total 914 (delta 22), reused 43 (delta 14), pack-reused 859<br>
-Receiving objects: 100% (914/914), 3.87 MiB | 473.00 KiB/s, done.<br>
-Resolving deltas: 100% (359/359), done."
+5. I pressed "Enter".<br>
+   "Cloning into 'facts4kids'...<br>
+    remote: Enumerating objects: 55, done.<br>
+    remote: Counting objects: 100% (55/55), done.<br>
+    remote: Compressing objects: 100% (36/36), done.<br>
+    remote: Total 914 (delta 22), reused 43 (delta 14), pack-reused 859<br>
+    Receiving objects: 100% (914/914), 3.87 MiB | 473.00 KiB/s, done.<br>
+    Resolving deltas: 100% (359/359), done."
+6. My local clone is created.
 
 ## Credits
 ### Content
