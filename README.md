@@ -141,7 +141,7 @@ The site also been tested by walking through each user story. The users are able
 
 ### Known Issues
 - The Google Map is not loaded properly in browser. This is the issue that I could not fix. This happened when:
-    - 'google' undefined variables issue found in console,
+    - 'google' undefined variables issue found at console.
     - Restriction done at the credentials of Google Maps API.
 - The Email link will lead to a blank page to certain computer that do not have a proper Mail settings.
 
